@@ -1,0 +1,16 @@
+Reserva sem selecionar horário padrão na área de morador
+
+Pré-requisitos:
+Condomínio deve ter área comum cadastrada
+Área comum deve permitir reservas por horário
+Reservas devem ser feitas apenas com horário padrão
+Devem estar cadastrados os horários na área comum
+
+Dado que estou na tela inicial do sistema de Morador
+E clico em Áreas comuns
+Seleciono Área Comum
+E seleciono uma data para reserva
+E clico no botão Reservar
+E clico na checkbox  "Eu aceito os termos de uso (Visualizar Termos de Uso)."
+Clico no botão Salvar
+Então deve mostrar mensagem "Informe os horários de início e fim do agendamento"

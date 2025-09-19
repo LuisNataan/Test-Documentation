@@ -1,0 +1,33 @@
+Reservas por horários padrões
+
+Pré-requisitos:
+Condomínio deve ter área comum cadastrada
+Área comum deve permitir reservas por horário
+Reservas devem ser feitas apenas com horário padrão
+Devem estar cadastrados os horários na área comum
+
+Dado que estou na tela de Áreas Comuns
+E seleciono uma área comum
+Clico no botão Opções
+E clico no botão Editar
+Dado que estou na tela de Editar área comum
+E estou na área de Configurações de Agendamento
+E seleciono no campo "É Necessário Agendamento?" a opção Sim
+E seleciono no campo "Tipo Reserva" a opção Horário
+E ativo a checkbox Somente Horários Padrão
+E informo novos horários
+E seleciono no campo "Dias permitidos para reserva" os dias da semana
+E clico no botão Salvar
+E deve mostrar mensagem "Área comum alterada com sucesso."
+Abro a aba Agenda
+E abro aba Áreas Comuns
+E clico em Reservas Áreas Comuns
+E seleciono um dia para reserva
+Dado que estou na tela Nova Reserva
+E seleciono Unidade
+E seleciono Morador
+E seleciono Horário
+E informo Motivo
+E ativo a checkbox "Eu aceito os termos de uso (Visualizar Termos de Uso)."
+E clico no botão Salvar
+Então Nova Reserva é realizada com sucesso sem o bloqueio de limite do horário final

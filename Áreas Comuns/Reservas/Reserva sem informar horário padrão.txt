@@ -1,0 +1,23 @@
+Reserva sem informar horário padrão
+
+Pré-requisitos:
+Condomínio deve ter área comum cadastrada
+Área comum deve permitir reservas por horário
+Reservas devem ser feitas apenas com horário padrão
+Devem estar cadastrados os horários na área comum
+
+Dado que estou na tela inicial do sistema
+E abro a aba Agenda
+E abro a aba Áreas Comuns
+E clico em Reservas Áreas Comuns
+E estou na tela Reserva de Área Comum
+E seleciono Condomínio
+E seleciono Área Comum
+E seleciono uma data para reserva
+Dado que estou na tela Nova Reserva
+Informo Unidade
+E informo Morador
+Informo Motivo
+E ativo a checkbox "Eu aceito os termos de uso (Visualizar Termos de Uso)."
+E clico em Salvar
+Então devo mostrar mensagem "Informe um horários para realizar o agendamento"
