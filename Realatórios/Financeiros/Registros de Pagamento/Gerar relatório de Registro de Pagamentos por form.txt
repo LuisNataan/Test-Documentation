@@ -1,0 +1,13 @@
+Gerar relatório de Registro de Pagamentos por forma de pagamento
+
+Pré-requisitos:
+Cliente deve possuir contas bancárias registradas
+Estar logado com uma conta de administradora
+Possuir uma, ou mais, forma de pagamento
+
+Dado que estou na tela de Relatório de Registro de Pagamentos
+E seleciono um Condomínio
+E seleciono um período de tempo
+E seleciono uma Conta Bancária
+E seleciono uma Forma de Pagamento (ex.: Pix)
+Então deve mostrar somente os pagamentos feitos com a forma de pagamento selecionada

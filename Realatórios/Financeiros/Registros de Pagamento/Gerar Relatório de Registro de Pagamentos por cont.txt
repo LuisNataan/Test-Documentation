@@ -1,0 +1,13 @@
+Gerar Relatório de Registro de Pagamentos por conta contábil
+
+Pré-requisitos:
+Cliente deve possuir contas bancárias registradas
+Estar logado com uma conta de administradora
+Possuir conta contábil cadastrada
+
+Dado que estou na tela de Registros de Pagamentos
+E seleciono um condomínio
+E informo um período de tempo
+E seleciono uma conta bancária
+E seleciono uma conta contábil destino (Ex.: Energia elétrica)
+Então deve mostrar somente os pagamentos dentro do período informado e das contas contábeis selecionadas
