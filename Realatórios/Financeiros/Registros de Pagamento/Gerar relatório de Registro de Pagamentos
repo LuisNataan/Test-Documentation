@@ -1,0 +1,16 @@
+Gerar relatório de Registro de Pagamentos
+
+Pré-requisitos:
+Cliente deve possuir contas bancárias registradas
+Estar logado com uma conta de administradora
+
+Dado que estou na tela inicial do sistema
+E abro a aba Relatórios
+E abro a aba Financeiros
+E abro a aba Registro de Pagamentos
+Dado que estou na tela de Registros de Pagamentos
+E seleciono um condomínio do cliente
+E informo um período de tempo
+E seleciono uma conta bancária
+E clico no botão Gerar
+Então deve mostrar os pagamentos realizados no período informado

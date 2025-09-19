@@ -1,0 +1,12 @@
+Abertura de relatóro analítico
+
+Dado que estou na tela inicial do sistema
+E clico na aba Relatórios
+E clico na aba Financeiros
+E clico na aba Demonstrativos
+E seleciono um Condomínio no campo Condomínio
+E seleciono o mês inicial
+E seleciono o mês final
+E clico seleciono no campo Relatório a opção Analítico
+Clico no botão Gerar
+Então devo gerar um demonstrativo detalhado

@@ -1,0 +1,14 @@
+[Bug]Reservas realizadas no mesmo período de tempo
+
+Dado que estou com uma Área Comum configurada
+E área comum possui configuração de reserva por período
+E estou na tela de reservas do morador
+Informo uma reserva no período da manhã
+E faço logout
+E estou na tela de login
+E insiro o login de um novo usuário
+E clico no botão de Áreas Comuns
+E seleciono a área comum configurada
+E faço reserva no período da manhã
+Clico no botão Reservar
+Então é realizada a reserva no mesmo período da manhã

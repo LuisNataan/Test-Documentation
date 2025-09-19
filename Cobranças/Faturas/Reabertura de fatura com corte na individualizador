@@ -1,0 +1,18 @@
+Reabertura de fatura com corte na individualizadora de água
+
+Marcar a checkbox Habilitar individualizadora de água no backend
+Marcar a checkbox Habilitar individualizadora de água para gestão de cortes de água nas condigurações de condomínio
+Haver leituras de água em faturas já vencidas
+
+Dado que estou na tela de Faturas
+E possuo unidade com fatura fechada
+E fatura está como Pendente
+E fatura está como vencida
+Clico no botão Opções
+Clico no botão Reabrir Fatura
+E deve abrir a tela Reabrir Fatura
+E não seleciono nenhuma opção
+E clico no botão Salvar
+Então devo mostrar mensagem 'Fail'
+
+
