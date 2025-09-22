@@ -1,0 +1,19 @@
+Lançamento de despesa com fornecedor conta contábil
+
+Pré-requisitos:
+Estar com a checkbox Vincular Fornecedor na Despesa ativo (Cadastros → Condomínios → Ação → Configurar)
+
+Cadastrar Fornecedor com conta contábil 
+Dado que estou na tela inicial do sistema
+E clico na aba Cadastros
+E clico em Fornecedores
+E estou na tela de Fornecedores
+Clico em Novo Registro
+E informo o nome do fornecedor
+E informo o CPF/CNPJ do Fornecedor
+E habilito a checkbox Criar conta contábil para o fornecedor
+E informo Condomínio
+E informo Telefone
+E informo Tipo de serviço (ex.: Jardineiro)
+E clico em Salvar
+Então devo salvar fornecedor com conta contábil com sucesso

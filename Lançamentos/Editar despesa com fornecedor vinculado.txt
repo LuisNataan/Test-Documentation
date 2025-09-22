@@ -1,0 +1,13 @@
+Editar despesa com fornecedor vinculado
+
+Pré-requisito:
+Possuir fornecedor com conta contábil cadastrado
+Possuir lançamento de despesa cadastrado
+
+Dado que estou na tela de Lançamentos
+E seleciono despesa com fornecedor vinculada
+Clico no botão Ações
+E clico no botão Edição avançada
+E estou na tela Alterar Lançamento - Edição Avançada
+E edito Conta de destino (débito)
+Então edito lançamento com sucesso

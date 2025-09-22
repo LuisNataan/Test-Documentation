@@ -1,0 +1,15 @@
+Lançar despesa com fornecedor
+
+Dado que estou na tela de Lançar Despesa
+E seleciono Condomínio
+E insiro Descrição do lançamento
+E habilito a checkbox Vincular fornecedor
+E informo Conta da despesa
+E informo Conta do passivo
+E informo Fornecedor
+E informo Conta de onde saiu o dinheiro
+E insiro Data do lançamento
+E informo Valor
+E seleciono Rateio
+Clico no botão Salvar
+Então devo salvar despesa com fornecedor vinculado

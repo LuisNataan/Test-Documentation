@@ -1,0 +1,12 @@
+Filtro por CNPJ de fornecedor
+
+Pré-requisitos:
+Possuir fornecedor com conta contábil cadastrado
+Possuir lançamento de despesa cadastrado
+Despesa deve estar cadastrada com fornecedor vinculado
+
+Dado que estou na tela de Lançamentos
+E seleciono o Tipo de Lançamento como Despesa
+E clico no botão Avançado
+E informo CNPJ do Fornecedor
+Então devo mostrar despesas com fornecedor do CNPJ informado
