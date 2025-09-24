@@ -1,0 +1,18 @@
+Criação de enquete com opção apenas Proprietário pode votar
+
+Dado que estou na tela inicial do sistema
+E abro a aba de Cadastros
+E clico em Enquete
+E clico no botão Novo Registro
+Dado que estou na tela Cadastrar Enquete
+E informo Condomínio
+E informo período de duração da enquete
+E seleciono a opção Proprietário no campo "Quem pode responder?"
+E seleciono a opção Sim no campo "Usuário pode ver resultado após votar?"
+E seleciono a opção Igualmente para todas as unidades no campo Contagem de votos
+E habilito a checkbox Permitir o voto de inadimplentes
+E informo o Título da Enquete
+E informo Descrição da Enquete
+E habilito a checkbox Considerar apenas um voto por unidade
+E clico no botão Salvar
+Então devo salvar enquete normalmente

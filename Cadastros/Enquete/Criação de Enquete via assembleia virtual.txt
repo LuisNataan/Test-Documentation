@@ -1,0 +1,20 @@
+Criação de Enquete via assembleia virtual
+
+Pré-requisitos:
+Deve possuir assembleia virtual já criada
+
+Dado que estou na tela de Assembleias Virtuais
+E seleciono Assembleia Virtual
+E clico no botão Ações
+E clico em Editar
+E clico no botão [+] ao lado do campo Enquetes
+E estou na tela Cadastrar Enquete
+E seleciono período de tempo
+E seleciono a opção Ambos no campo "Quem pode responder?"
+E seleciono opção Sim no campo "Usuário pode ver resultado geral após votar?"
+E seleciono a opção Igualmente para todos no campo "Contagem dos votos"
+E habilito checkbox Permitir o voto de inadimplentes
+E informo título da Enquete
+E informo Descrição da enquete
+E clico em Salvar
+Então enquete é criada dentro da assembleia virtual

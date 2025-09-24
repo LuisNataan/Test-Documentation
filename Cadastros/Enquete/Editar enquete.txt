@@ -1,0 +1,14 @@
+Editar enquete
+
+Pré-requisitos:
+Possuir enquetes já cadastradas e ativas
+Enquete deve estar com a checkbox Permitir voto de inadimplentes desativada
+
+Dado que estou na tela de Enquetes
+E clico em Enquete
+E clico no botão Ações
+E clico em Editar
+E deve abrir a tela Atualizar Enquete
+E habilito checkbox Permitir voto de inadimplentes
+E clico no botão Salvar
+Então enquete deve ser atualizada com sucesso
