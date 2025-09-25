@@ -1,0 +1,17 @@
+Filtro Todos e exclusão de lançamentos
+
+Pré-requisitos:
+Haver mais de 250 lançamentos registrados
+Deve haver uma grande quantidade de lançamentos registrados (Mais de 100, de preferência)
+Selecionar um período de tempo grande (ex.: 01/01/2025 até 01/01/2026)
+
+Dado que estou na tela de lançamentos
+E seleciono um condomínio
+E seleciono um período de tempo
+E seleciono Tipo de Lançamento como Todos
+E clico no botão [+] Avançado
+E seleciono Paginação com Todos
+E clico em Filtrar
+E clico na checkbox Selecionar Todos
+E clico no botão Excluir lançamentos
+Então deve mostrar mensagem "Erro: selecione, no máximo, duzentos e cinquenta lançamentos."

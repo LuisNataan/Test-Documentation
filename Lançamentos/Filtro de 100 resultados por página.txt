@@ -1,0 +1,13 @@
+Filtro de 100 resultados por página
+Pré-requisitos:
+Deve haver uma grande quantidade de lançamentos registrados (Mais de 100, de preferência)
+Selecionar um período de tempo grande (ex.: 01/01/2025 até 01/01/2026)
+
+Dado que estou na tela de lançamentos
+E seleciono um condomínio
+E seleciono um período de tempo
+E seleciono Tipo de Lançamento como Todos
+E clico no botão [+] Avançado
+E seleciono Paginação com 100 resultados
+E clico em Filtrar
+Então deve filtrar todos os lançamentos mostrando apenas 100 por página
