@@ -1,0 +1,19 @@
+Relatório de Endereços dos correios de Proprietários modo retrato
+
+Pré-requisitos:
+Ter condomínios cadastrados
+Condomínios devem ter endereços de cobrança e endereços de correios
+
+Dado que estou na tela inicial do sistema
+E abro a aba Relatórios
+E abro a aba Diversos
+E clico em Relatório de Endereços
+E seleciono um Condomínio
+E seleciono a quantidade de unidades
+E seleciono o Tipo de endereço Correios
+E seleciono o Endereço de Proprietário
+E habilito a checkbox Imprimir em modo retrato
+E clico no botão Gerar
+E clico no botão Download
+E seleciono a opção PDF
+Então é possível visualizar o arquivo em modo retrato
