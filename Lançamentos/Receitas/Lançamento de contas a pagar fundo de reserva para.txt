@@ -1,0 +1,30 @@
+Lançamento de contas a pagar fundo de reserva para inquilino
+
+Pré-requisitos:
+Ter um condomínio com fundo de reserva configurado. Por padrão será 10% de taxa
+Habilitar na seção de Lançamentos e faturas a checkbox Cobrar fundo de reserva do proprietário
+
+Dado que estou na tela inicial do sistema
+E abro a aba Lançamentos
+E clico em Contas a Pagar
+Dado que estou na tela Contas a Pagar
+Clico no botão Novo Registro
+E estou na tela Cadastrar contas a pagar
+E seleciono um Condomínio
+E adiciono Descrição
+E informo Conta do ativo ou despesa
+E informo Conta passivo
+E informo Data de lançamento
+E informo um Valor
+E informo Data de vencimento da primeira parcela
+E informo Rateio como Cobrar de todas as unidades
+E habilito checkbox Incluir taxa de fundo de reserva
+E informo Forma de divisão como Igualmente para todas as unidades
+E seleciono o mês para Incluir rateio na fatura
+E seleciono Inquilino no campo Cobrar de
+E na Forma de Lançamento seleciono Lançar rateio após o pagamento
+E clico em Salvar
+E devo salvar Contas a pagar corretamente
+E clico no botão Ir para Listagem
+E abro a Conta a pagar lançada
+Então devo mostrar Fundo de Reserva como Sim
