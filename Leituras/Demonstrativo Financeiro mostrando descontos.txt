@@ -1,0 +1,7 @@
+Demonstrativo Financeiro mostrando descontos
+
+Dado que estou na tela Demonstrativo Financeiro
+E seleciono o Condomínio
+E seleciono o período de tempo
+E clico no botão Gerar
+Então é gerado o demonstrativo com descontos no relatório sem quebra de valores
