@@ -1,0 +1,15 @@
+Realizando lançamento de descontos
+
+Pré-requisitos:
+Possuir no plano de contas os descontos cadastrados
+
+Dado que estou na tela de lançamentos de desconto
+E seleciono o condomínio
+E informo a descrição do desconto
+E deve aparecer no campo Conta desconto somente Descontos concedidos
+E clico no campo Conta de desconto
+Devo mostrar somente a conta de descontos
+E informo valor do desconto
+E informo data do lançamento
+E clico no botão Salvar
+Então deve lançar o desconto normalmente

@@ -1,0 +1,8 @@
+Não exibir informação se não houver histórico
+
+Pré-requisitos: Condomínio deve ser novo ou não estava habilitada a leitura de relógios 
+Não há leituras feitas no condomínio
+
+Dado que estou na tela de Leituras
+E não tenho leituras anteriores registradas
+Então não deve mostrar informações sobre as leituras anteriores

@@ -1,0 +1,6 @@
+Lançamento de desconto na lista de lançamentos
+
+Dado que estou na tela de lançamentos
+E informo tipo de lançamento como Descontos
+E clico no botão Filtrar
+Então deve mostrar o desconto lançado anteriormente

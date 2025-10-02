@@ -1,0 +1,8 @@
+Exibir último mês com leitura registrada
+
+Pré-requisitos: Deve estar habilitada a opção de leituras de água nas configurações do Condomínios
+Deve haver leituras feitas nos meses anteriores
+
+Dado que estou na tela de Leituras de Relógios
+E seleciono um condomínio
+Então devo mostrar mensagem "O último mês com leitura registrada foi Mês/Ano" (Ex.: Julho/2025)

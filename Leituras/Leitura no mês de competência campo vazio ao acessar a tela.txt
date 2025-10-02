@@ -1,0 +1,10 @@
+Leitura no mês de competência campo vazio ao acessar a tela
+Pré-requisitos:
+Estar com leituras de água configurada nas configurações de condomínio
+No painel de configurações de condomíno, na seção Leituras ativar a checkbox Habilitar leitura de água
+
+Dado que estou na tela inicial do sistema
+E clico na aba Leituras
+Dado que estou na tela Leituras de Relógios
+E seleciono Condomínio
+Então o campo Mês de competência da leitura está vazio

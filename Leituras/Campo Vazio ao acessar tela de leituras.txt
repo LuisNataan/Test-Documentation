@@ -1,0 +1,10 @@
+Campo Vazio ao acessar tela de leituras
+
+Pré-requisitos: Deve estar habilitada a opção de leituras de água nas configurações do Condomínios
+
+Dado que estou na tela inicial do sistema
+E abro a aba Leituras
+E clico em Leituras
+E estou na tela de Leituras de Relógios
+E não há valores inseridos no campo Mês de competência da leitura
+Então deve mostrar mensagem alertando "Atenção: Para lançar as leituras, informe primeiro o mês de competência."
