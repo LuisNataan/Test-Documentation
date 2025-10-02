@@ -1,0 +1,22 @@
+Cadastrar visitante com foto e sem informar nome
+
+Pré-requisitos:
+Ter uma câmera para registrar as fotos
+Estar com as permissões de acesso para a câmera no navegador
+
+Dado que estou na tela inicial dp sistema
+E abro a aba Cadastros
+E clico em Visitantes
+E estou na tela Visitantes
+E clico no botão Novo Registro
+E estou na tela Cadastrar visitante
+E seleciono Condomínio
+E informo CPF do Visitante
+E informo RG do Visitante
+E informo Telefone do Visitante
+E clico no botão Azul Tirar Foto
+E deve abrir a imagem em tempo real para tirar a foto
+E clico no botão Tirar Foto
+E clico no botão Salvar
+E deve mostrar mensagem abaixo do campo Nome: ""Nome" não pode ficar em branco."
+Então cadastro não é feito corretamente com a foto do visitante

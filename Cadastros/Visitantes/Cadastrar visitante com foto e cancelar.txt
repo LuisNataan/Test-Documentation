@@ -1,0 +1,18 @@
+Cadastrar visitante com foto e cancelar
+
+Pré-requisitos:
+Ter uma câmera para registrar as fotos
+Estar com as permissões de acesso para a câmera no navegador
+
+Dado que estou na tela inicial dp sistema
+E abro a aba Cadastros
+E clico em Visitantes
+E estou na tela Visitantes
+E clico no botão Novo Registro
+E estou na tela Cadastrar visitante
+E seleciono Condomínio
+E informo nome do Visitante
+E clico no botão Azul Tirar Foto
+E deve abrir a imagem em tempo real para tirar a foto
+E clico no botão Cancelar
+Então a opção de tirar foto é cancelada

@@ -1,0 +1,19 @@
+Cadastrar visitante com foto
+
+Pré-requisitos:
+Ter uma câmera para registrar as fotos
+Estar com as permissões de acesso para a câmera no navegador
+
+Dado que estou na tela inicial dp sistema
+E abro a aba Cadastros
+E clico em Visitantes
+E estou na tela Visitantes
+E clico no botão Novo Registro
+E estou na tela Cadastrar visitante
+E seleciono Condomínio
+E clico no botão Azul Tirar Foto
+E deve abrir a imagem em tempo real para tirar a foto
+E clico no botão Tirar Foto
+E informo nome do Visitante
+E clico no botão Salvar
+Então cadastro é feito corretamente com a foto do visitante

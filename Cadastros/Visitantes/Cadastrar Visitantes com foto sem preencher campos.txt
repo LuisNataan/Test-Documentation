@@ -1,0 +1,15 @@
+Cadastrar Visitantes com foto sem preencher campos
+
+Pré-requisitos:
+Ter uma câmera para registrar as fotos
+Estar com as permissões de acesso para a câmera no navegador
+
+Dado que estou na tela inicial dp sistema
+E abro a aba Cadastros
+E clico em Visitantes
+E estou na tela Visitantes
+E clico no botão Novo Registro
+E estou na tela Cadastrar visitante
+E clico no botão Salvar
+E devo mostrar mensagem abaixo do campo "Nome": "Nome" não pode ficar em branco.
+Então cadastro não é realizado
