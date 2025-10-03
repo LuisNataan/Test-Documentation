@@ -1,7 +1,6 @@
-Unir faturas de moradores diferentes
+Unificar todas as faturas.txt
 
-Morador deve possuir faturas Aguardando Fechamento
-Deve haver duas ou mais faturas abertas
+Moradores devem possuir faturas Aguardando Fechamento
 Faturas devem estar no mesmo mês de competência
 Faturas devem ser da mesma competência
 Faturas devem ser de moradores diferentes
@@ -9,11 +8,12 @@ Faturas devem ser de moradores diferentes
 Dado que estou na tela inicial do sistema
 E abro aba Cobranças
 E clico em Faturas
-Seleciono Condomínio
+E seleciono Condomínio
 E seleciono Período de Tempo (Ex.: Jan/2025-Fev/2025)
 E clico no botão Filtrar
 Devo mostrar as faturas dos Moradores
-E seleciono faturas de dois moradores
+E clico no botão Selecionar Todos
 E clico no botão Unificar Faturas
 E devo mostrar mensagem de erro "Somente faturas do mesmo morador podem ser unificadas"
 Então faturas não são unificadas
+

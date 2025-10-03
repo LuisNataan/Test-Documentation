@@ -17,5 +17,5 @@ E clico no botão Filtrar
 Devo mostrar as fatura do Morador
 E seleciono faturas de meses diferentes
 E clico no botão Unificar Faturas
-E devo mostrar mensagem de erro "Não foi possível unifcar faturas"
+E devo mostrar mensagem de erro "Somente faturas do mesmo mês de competência podem ser unificadas."
 Então faturas não são unificadas
