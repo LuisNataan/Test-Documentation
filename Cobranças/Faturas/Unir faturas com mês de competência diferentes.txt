@@ -1,0 +1,21 @@
+Unir faturas com mês de competência diferentes
+
+Pré-requisitos:
+Morador deve possuir faturas Aguardando Fechamento
+Deve haver duas ou mais faturas abertas
+Faturas podem estar em meses diferentes
+Faturas devem ser da mesma competência
+Faturas devem ser do mesmo morador
+
+Dado que estou na tela inicial do sistema
+E abro aba Cobranças
+E clico em Faturas
+Seleciono Condomínio
+E seleciono Período de Tempo (Ex.: Jan/2025-Fev/2025)
+E informo Inquilino
+E clico no botão Filtrar
+Devo mostrar as fatura do Morador
+E seleciono faturas de meses diferentes
+E clico no botão Unificar Faturas
+E devo mostrar mensagem de erro "Não foi possível unifcar faturas"
+Então faturas não são unificadas

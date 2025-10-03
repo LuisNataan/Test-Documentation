@@ -1,0 +1,19 @@
+Funcionalidade de unir faturas
+
+Pré-requisitos:
+Morador deve possuir faturas Aguardando Fechamento
+Deve haver duas ou mais faturas abertas
+Faturas devem estar no mesmo mês de competência
+Faturas devem ser da mesma competência
+Faturas devem ser do mesmo morador
+
+Dado que estou na tela inicial do sistema
+E abro aba Cobranças
+E clico em Faturas
+Seleciono Condomínio
+E seleciono Período de Tempo (Ex.: Jan/2025-Fev/2025)
+E clico no botão Filtrar
+Devo mostrar as faturas dos Moradores
+E seleciono faturas
+E clico no botão Unificar Faturas
+Então faturas são unificadas
