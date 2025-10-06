@@ -1,0 +1,20 @@
+Gerar Boleto Valor Restante com valor maior que o total.txt
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cobranças
+E clico em Faturas
+Estou na tela de Faturas
+E seleciono uma fatura com status Falta Fechamento
+Clico no botão Ações
+E clico em Fechar Fatura
+E deve abrir modal Fechamento de Fatura
+E informo Senha
+E clico no botão Salvar
+E deve mostrar mensagem "Fatura fechada com sucesso."
+E seleciono Fatura com status Pendente
+Clico no botão Ações com o Mouse
+E clico em Receber Parcial
+E deve abrir modal Receber Parcial
+E informo no campo Valor Pago quantia para pagamento parcial maior que o valor da fatura (Ex.: R$500,00)
+E clico em Salvar
+Então deve mostrar mensagem de erro "O valor pago não pode ser superior ao valor total da(s) fatura(s)."

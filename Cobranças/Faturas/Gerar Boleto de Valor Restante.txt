@@ -1,0 +1,37 @@
+Gerar Boleto de Valor Restante
+
+Pré-requisitos:
+Deve haver faturas com status de Falta Fechamento
+Possuir lançamentos de receita realizados
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cobranças
+E clico em Faturas
+Estou na tela de Faturas
+E seleciono uma fatura com status Falta Fechamento
+Clico no botão Ações
+E clico em Fechar Fatura
+E deve abrir modal Fechamento de Fatura
+E informo Senha
+E clico no botão Salvar
+E deve mostrar mensagem "Fatura fechada com sucesso."
+E seleciono Fatura com status Pendente
+Clico no botão Ações com o Mouse
+E clico em Receber Parcial
+E deve abrir modal Receber Parcial
+E informo no campo Valor Pago quantia para pagamento parcial (Ex.: R$10,00)
+E não informo o valor dos juros
+E seleciono conta que receberá depósito (Ex.: Conta Corrente do Condomínio)
+E clico no botão Salvar
+E deve mostrar mensagem "Recebimento parcial realizado com sucesso."
+Seleciono fatura com pagamento parcial efetuado
+Clico no botão Ações com o mouse
+E clico em Gerar Boleto Valor Restante
+E deve abrir modal Confira Boletos
+E seleciono o Banco para gerar o boleto (Ex.: Sicredi)
+E clico em Continuar
+E informo Nova data de Vencimento
+E digito Senha
+E clico em Continuar
+E deve abrir modal com a visualização do boleto
+Então na seção de pagamento deve apresentar valor total restante a ser pago (Ex.: 17,78)

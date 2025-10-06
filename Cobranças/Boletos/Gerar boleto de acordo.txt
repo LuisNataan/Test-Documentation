@@ -1,0 +1,18 @@
+Gerar boleto de acordo
+Pré-requisitos:
+Deve haver um acordo cadastrado
+
+Dado que estou na tela inicial do sistema
+E abro aba Cobranças
+E clico em Boletos
+E seleciono boleto de Acordo
+E clico no botão Ações
+Deve abrir modal Receber Pagamento
+E informo valor pago menor que o valor total
+E habilito a checkbox Lançar Diferença Juros
+E seleciono a conta que receberá o depósito (Ex.: Caixa do Condomínio)
+E seleciono o boleto de Acordo
+Clico no botão Ações com o Mouse
+E clico no botão Comprovante
+E deve abrir o comprovante do pagamento
+Então no boleto deve constar a quantia parcial paga e o valor total a ser pago
