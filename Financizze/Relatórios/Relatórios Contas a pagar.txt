@@ -1,0 +1,13 @@
+Relatório de Contas a Pagar no Financizze
+
+Pré-requisitos:
+Deve estar configurado o relatório de contas a pagar no menu Configurações -> Grupos e Permissões -> Editar -> Relatórios -> Rela de Contas a pagar/a recber.
+
+Dado que estou na página inicial do Financizze
+E clico no menu "Relatórios"
+E clico na opção "Contas a pagar"
+Deve existir campo Fornecedor
+E deve existir coluna Saldo em Aberto
+E deve existir coluna Total Recebido
+E deve existir coluna Total em Aberto
+Então tela de contas a pagar está configurada corretamente

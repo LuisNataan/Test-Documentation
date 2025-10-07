@@ -1,0 +1,68 @@
+Visualizar relatórios de contas a pagar e receber por cliente
+
+Pré-requisitos:
+Estar com a permissão de relatórios de contas a receber.
+Estar com contas a receber cadastradas no sistema.
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Receber"
+E informo um cliente válido
+Quando gero o relatório de contas a receber
+Então devo visualizar o relatório com as contas a receber do cliente informado
+
+Visualizar relatórios de contas a receber filtros vazios
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Receber"
+Quando gero o relatório de contas a receber sem informar filtro de cliente
+Então devo visualizar o relatório com todas as contas a receber cadastradas no sistema
+
+Visualizar Coluna cliente no relatório de contas a receber
+
+Dado que estou na tela de relatórios de contas a receber
+E devo visualizar a coluna "Cliente" no relatório
+Então a coluna "Cliente" deve estar visível com os nomes corretos dos clientes associados às contas a receber exibidas no relatório
+
+Visualizar Coluna cliente vazia no relatório de contas a receber
+Pré-requisitos:
+Deve estar com uma conta a receber cadastrada no sistema sem cliente associado.
+
+Dado que estou na tela de relatórios de contas a receber
+E devo visualizar a coluna "Cliente" no relatório
+Então a coluna "Cliente" deve estar visível e exibir vazio para a conta a receber sem cliente associado
+
+Visualizar coluna Saldo a Receber no relatório de contas a receber
+Pré-requisitos:
+Deve estar com uma conta parcelada de 4x R$250,00 cadastrada no sistema.
+Devem estar recebida 1 parcela dessa conta.
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Receber"
+E seleciono uma conta parcelada de 4x R$250,00
+E realizo a busca
+Então deve mostrar a coluna "Saldo a Receber" com o valor correto de R$750,00
+
+Atualizar relatório de contas a receber após recebimento de parcela
+Pré-requisitos:
+Deve estar com uma conta parcelada de 4x R$250,00 cadastrada no sistema.
+Deve estar com 1 parcela dessa conta recebida.
+
+Dado que estou na tela de Relatórios de Contas a Receber
+E seleciono uma conta parcelada de 4x R$250,00
+E efetuo o recebimento de 1 parcela
+Quando atualizo o relatório de contas a receber
+Então o valor do "Saldo a Receber" deve ser atualizado para R$500,00
+
+Visualizar totais no relatório de contas a receber
+Pré-requisitos:
+Deve estar com contas a receber cadastradas no sistema.
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Receber"
+Quando gero o relatório de contas a receber
+E devo visualizar o total de "Total Recebido" e "Total a Receber" no final do relatório
+Então os totais devem estar corretos conforme os valores das contas a receber exibidas no relatório

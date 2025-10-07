@@ -1,0 +1,9 @@
+Sem acesso aos relatórios
+
+Pré-requisitos:
+Estar sem a permissão de relatórios de contas a pagar e receber.
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+Quando tento acessar qualquer relatório financeiro
+Então não devo conseguir visualizar os relatórios de contas a pagar e receber

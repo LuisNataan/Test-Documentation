@@ -1,0 +1,56 @@
+Visualizar relatórios de contas a pagar por fornecedor
+
+Pré-requisitos:
+Estar com a permissão de relatórios de contas a pagar.
+Estar com contas a pagar cadastradas no sistema.
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Pagar"
+E informo um fornecedor válido
+Quando gero o relatório de contas a pagar
+Então devo visualizar o relatório com as contas a pagar do fornecedor informado
+
+Visualizar relatórios de contas a pagar filtros vazios
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Pagar"
+Quando gero o relatório de contas a pagar sem informar filtro de fornecedor
+Então devo visualizar o relatório com todas as contas a pagar cadastradas no sistema
+
+Visualizar Coluna Saldo em Aberto no relatório de contas a pagar
+
+Pré-requisitos:
+Deve estar com uma conta parcelada de 5x R$200,00 cadastrada no sistema.
+Devem estar pagas 2 parcelas dessa conta.
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Pagar"
+E seleciono uma conta parcelada de 5x R$200,00
+E realizo a busca
+Então deve mostrar a coluna "Saldo em Aberto" com o valor correto de R$600,00
+
+
+Atualizar relatório de contas a pagar após pagamento de parcela
+Pré-requisitos:
+Deve estar com uma conta parcelada de 5x R$200,00 cadastrada no sistema.
+
+Dado que estou na tela de Relatórios de Contas a Pagar
+E seleciono uma conta parcelada de 5x R$200,00
+E efetuo o pagamento de 1 parcela
+Quando atualizo o relatório de contas a pagar
+Então o valor do "Saldo em Aberto" deve ser atualizado para R$800,00
+
+Visualizar totais no relatório de contas a pagar
+
+Pré-requisitos:
+Deve estar com contas a pagar cadastradas no sistema.
+
+Dado que estou na tela inicial do sistema
+E acesso o menu "Relatórios"
+E acesso o submenu "Contas a Pagar"
+Quando gero o relatório de contas a pagar
+E devo visualizar o total de "Total Recebido" e "Total em Aberto" no final do relatório
+Então os totais devem estar corretos conforme os valores das contas a pagar exibidas no relatório

@@ -1,0 +1,13 @@
+Relatório de Contas a recber no Financizze
+
+Pré-requisitos:
+Deve estar configurado o relatório de contas a recber no menu Configurações -> Grupos e Permissões -> Editar -> Relatórios -> Rela de Contas a pagar/a recber.
+
+Dado que estou na página inicial do Financizze
+E clico no menu "Relatórios"
+E clico na opção "Contas a receber"
+Deve existir campo Cliente
+E deve existir coluna Saldo a Receber
+E deve existir coluna Total Recebido
+E deve existir coluna Total em Aberto
+Então tela de contas a receber está configurada corretamente
