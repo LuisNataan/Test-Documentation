@@ -1,0 +1,24 @@
+Enviar Comunicado Geral para Proprietário Adicional e Inquilino Adicional
+
+Pré-requisitos:
+- Cadastro de proprietário adicional
+- Cadastro de inquilino adicional
+- Cadastro de unidade
+- Unidade deve estar com proprietário adicional ou inquilino adicional
+
+Dado que estou na tela inicial do sistema
+E acesso abro a aba Agenda
+E clico em Comunicados Gerais
+E estou na tela de Comunicados Gerais
+E clico em Novo Registro
+E estou na tela de Cadastro de Comunicado Geral
+E seleciono Condomínio
+E seleciono Unidades para envio do Comunicado
+E informo Título
+E informo Descrição
+E informo a Data de notificação
+E informo a Hora de notificação
+E seleciono Proprietário Adicional no campo Enviar para
+E seleciono Inquilino Adicional no campo Enviar para
+E clico em Salvar
+Então o sistema cria o comunicado geral com sucesso

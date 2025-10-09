@@ -1,0 +1,17 @@
+Cadastro de inquilino
+
+Dado que estou na tela incial do sistema
+E acesso abro a aba Cadastros
+E clico em Inquilinos/Proprietários
+E estou na tela de Inquilinos/Proprietários
+E clico em Novo Registro
+E estou na tela de Cadastro de Inquilino/Proprietário
+E informo Nome
+E informo Data de Nascimento
+E informo Email
+E informo CPF
+E informo RG
+E informo Telefone
+E seleciono a opção Inquilino/Proprietário no campo Tipo Cadastro
+E clico em Salvar
+Então o sistema cadastra o inquilino adicional com sucesso

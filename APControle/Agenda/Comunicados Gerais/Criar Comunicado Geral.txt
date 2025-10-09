@@ -1,0 +1,70 @@
+Criar comunicado geral
+
+Dado que estou na tela inicial do sistema
+E acesso abro a aba Agenda
+E clico em Comunicados Gerais
+E estou na tela de Comunicados Gerais
+E clico em Novo Registro
+E estou na tela de Cadastro de Comunicado Geral
+E seleciono Condomínio
+E seleciono Unidades para envio do Comunicado
+E informo Título
+E informo Descrição
+E informo a Data de notificação
+E informo a Hora de notificação
+E seleciono Proprietário no campo Enviar para
+E clico em Salvar
+Então o sistema cria o comunicado geral com sucesso
+
+Criar comunicado geral para inquilinos
+
+Dado que estou na tela inicial do sistema
+E acesso abro a aba Agenda
+E clico em Comunicados Gerais
+E estou na tela de Comunicados Gerais
+E clico em Novo Registro
+E estou na tela de Cadastro de Comunicado Geral
+E seleciono Condomínio
+E seleciono Unidades para envio do Comunicado
+E informo Título
+E informo Descrição
+E informo a Data de notificação
+E informo a Hora de notificação
+E seleciono Inquilino no campo Enviar para
+E clico em Salvar
+Então o sistema cria o comunicado geral com sucesso
+
+Criar comunicado geral para proprietários e inquilinos
+
+Dado que estou na tela inicial do sistema
+E acesso abro a aba Agenda
+E clico em Comunicados Gerais
+E estou na tela de Comunicados Gerais
+E clico em Novo Registro
+E estou na tela de Cadastro de Comunicado Geral
+E seleciono Condomínio
+E seleciono Unidades para envio do Comunicado
+E informo Título
+E informo Descrição
+E informo a Data de notificação
+E informo a Hora de notificação
+E seleciono Proprietário e Inquilino no campo Enviar para
+E clico em Salvar
+Então o sistema cria o comunicado geral com sucesso
+
+Criar comunicado geral sem selecionar unidades
+
+Dado que estou na tela inicial do sistema
+E acesso abro a aba Agenda
+E clico em Comunicados Gerais
+E estou na tela de Comunicados Gerais
+E clico em Novo Registro
+E estou na tela de Cadastro de Comunicado Geral
+E seleciono Condomínio
+E informo Título
+E informo Descrição
+E informo a Data de notificação
+E informo a Hora de notificação
+E seleciono Proprietário e Inquilino no campo Enviar para
+E clico em Salvar
+Então comunicado é criado sem selecionar unidades

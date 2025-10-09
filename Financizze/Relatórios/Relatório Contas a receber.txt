@@ -1,7 +1,7 @@
-Relatório de Contas a recber no Financizze
+Relatório de Contas a receber no Financizze
 
 Pré-requisitos:
-Deve estar configurado o relatório de contas a recber no menu Configurações -> Grupos e Permissões -> Editar -> Relatórios -> Rela de Contas a pagar/a recber.
+Deve estar configurado o relatório de contas a recber no menu Configurações -> Grupos e Permissões -> Editar -> Relatórios -> Rela de Contas a pagar/a receber.
 
 Dado que estou na página inicial do Financizze
 E clico no menu "Relatórios"

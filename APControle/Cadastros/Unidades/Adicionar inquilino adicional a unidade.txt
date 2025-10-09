@@ -1,0 +1,16 @@
+Adicionar inquilino adicional a unidade
+
+Pré-requisitos:
+- Cadastro de inquilino
+- Cadastro de unidade
+- Unidade deve estar com inquilino principal
+
+Dado que estou na tela inicial do sistema
+E acesso abro a aba Cadastros
+E clico em Unidades
+E estou na tela de Unidades
+E clico em Editar na unidade desejada
+Estou na tela Editar Unidade
+E informo no campo Morador Adicional o inquilino adicional previamente cadastrado
+E clico em Salvar
+Então o sistema adiciona o inquilino adicional a unidade com sucesso

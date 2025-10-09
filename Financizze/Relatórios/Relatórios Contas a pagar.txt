@@ -1,7 +1,7 @@
 Relatório de Contas a Pagar no Financizze
 
 Pré-requisitos:
-Deve estar configurado o relatório de contas a pagar no menu Configurações -> Grupos e Permissões -> Editar -> Relatórios -> Rela de Contas a pagar/a recber.
+Deve estar configurado o relatório de contas a pagar no menu Configurações -> Grupos e Permissões -> Editar -> Relatórios -> Rela de Contas a pagar/a receber.
 
 Dado que estou na página inicial do Financizze
 E clico no menu "Relatórios"
