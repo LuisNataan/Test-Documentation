@@ -1,0 +1,64 @@
+Anexos em parcelas de contas a pagar
+
+Pré-requisitos:
+Deve possuir contas a pagar cadastradas no APControle.
+Deve possuir anexos para adicionar nas parcelas.
+
+Dado que estou na tela inicial do APControle
+E abro a aba de Lançamentos
+E acesso a tela de Contas a Pagar
+Estou na tela de Contas a Pagar
+E seleciono uma conta a pagar que possua parcelas
+E clico no botão Ações com o mouse
+E clico no botão Visualizar Parcelas
+Quando acesso a tela de Parcelas da Conta a Pagar
+E deve listar as parcelas da conta a pagar
+Então na coluna Detalhes da Parcela deve ser exibido o ícone de Anexos
+
+Vincular os anexos às parcelas
+
+Dado que estou na tela de Parcelas da Conta a Pagar
+E clico em Novo Registro com o mouse
+E seleciono um condominio
+E adiciono Descrição
+E informo Conta do ativo ou despesa
+E informo Conta passivo
+E informo Fornecedor
+E informo Data Lançamento
+E informo Valor
+E informo Data Vencimento da primeira parcela
+E informo Número de Parcelas
+E adiciono anexos à conta a pagar
+E habilito a checkbox Vincular os anexos às parcelas
+Quando clico no botão Salvar
+Conta a pagar deve ser salva com sucesso
+E acesso a tela de Contas a Pagar
+E seleciono a conta a pagar que acabei de criar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+E na seção Parcelas
+Então na coluna Detalhes da Parcela deve ser exibido o ícone de Anexos com asteriscos indicando que a parcela possui anexos vinculados
+
+Parcelas sem anexos vinculados
+
+Dado que estou na tela de Parcelas da Conta a Pagar
+E clico no botão Novo Registro com o mouse
+E seleciono um condominio
+E adiciono Descrição
+E informo Conta do ativo ou despesa
+E informo Conta passivo
+E informo Fornecedor
+E informo Data Lançamento
+E informo Valor
+E informo Data Vencimento da primeira parcela
+E informo Número de Parcelas
+E adiciono anexos à conta a pagar
+E não habilito a checkbox Vincular os anexos às parcelas
+Quando clico no botão Salvar
+Conta a pagar deve ser salva com sucesso
+E acesso a tela de Contas a Pagar
+E seleciono a conta a pagar que acabei de criar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+E na seção Parcelas
+Então na coluna Detalhes da Parcela deve ser exibido o ícone de Anexos sem asteriscos indicando que a parcela não possui anexos vinculados

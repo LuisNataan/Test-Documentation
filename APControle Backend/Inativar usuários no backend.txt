@@ -1,0 +1,53 @@
+Inativar usuários no backend
+
+Pré-requisitos:
+- Cadastro de usuário
+- Acesso ao backend
+- Usuário deve estar ativo
+- Deve estar com permissão para inativar usuários
+
+Dado que estou na tela inicial do backend
+E clico na aba Usuários
+E clico em Resetar Usuários
+E estou na tela de Resetar Usuários
+E informo o login do usuário
+E clico em Resetar
+E deve mostrar mensagem "Deseja realmente resetar o usuário?"
+E clico no botão Ok
+Então o sistema inativa o usuário com sucesso
+
+Inativar usuário que não existe
+
+Pré-requisitos:
+- Cadastro de usuário
+- Acesso ao backend
+- Deve estar com permissão para inativar usuários
+- Usuário não deve existir
+
+Dado que estou na tela inicial do backend
+E clico na aba Usuários
+E clico em Resetar Usuários
+E estou na tela de Resetar Usuários
+E informo o login do usuário que não existe
+E clico em Resetar
+E devo mostrar modal perguntando "Deseja realmente resetar o usuário?"
+E clico no botão Ok
+Então o sistema mostra mensagem de erro "Não foi possível encontrar usuário com o login"
+
+Inativar usuário já inativo
+
+Pré-requisitos:
+- Cadastro de usuário
+- Acesso ao backend
+- Usuário deve estar inativo
+- Deve estar com permissão para inativar usuários
+
+Dado que estou na tela inicial do backend
+E clico na aba Usuários
+E clico em Resetar Usuários
+E estou na tela de Resetar Usuários
+E informo o login do usuário que já está inativo
+E clico em Resetar
+E devo mostrar modal perguntando "Deseja realmente resetar o usuário?"
+E clico no botão Ok
+Então o sistema mostra mensagem de erro "Não foi possível encontrar usuário com o login"

@@ -1,0 +1,25 @@
+Configuração de API Itaú no condominio APControle Backend
+
+Pré-requisitos:
+Estar logado no backend do APControle com permissão de administrador.
+Estar com API Itau ativa no APControle.
+Condominio deve estar cadastrado no APControle.
+Condominio deve possuir conta Itaú cadastrada.
+
+Dado que estou logado no backend do APControle com permissão de administrador
+E que a API Itau está ativa no APControle
+E acesso a tela de Condominios
+E seleciono um condominio
+E clico no botão Ações
+E clico na opção Configurar Banco
+Quando acesso a tela de Configuração de Banco
+E deve aparecer a conta Itaú cadastrada
+E clico no botão Ações com o mouse
+E clico na opção Editar
+E acesso a tela de Edição de Conta Bancária
+E seleciono a opção Itaú no campo Banco
+Quando é habilitada a checkbox Usar integração com API de Cobrança
+Devo mostrar novo campo Dias para crédito (somente no sistema)
+E clico na checkbox Confirmar Dados
+E clico no botão Salvar
+Então a conta Itaú deve ser atualizada com a integração da API de Cobrança habilitada
