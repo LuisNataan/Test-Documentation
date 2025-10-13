@@ -1,0 +1,14 @@
+Diferença entre: Relatório de Rateio Analítico X Relatório de Lançamentos
+
+Pré-requisitos:
+Deve haver lançamentos cadastrados no sistema APControle.
+Passos para reproduzir o erro:
+1. Acesse o módulo de Relatórios no sistema APControle.
+2. Selecione a opção de Relatórios Financeiros.
+3. Escolha o Relatório de Rateio Analítico e gere o relatório.
+4. Em seguida, selecione o Relatório de Lançamentos e gere o relatório.
+5. Compare os valores apresentados nos dois relatórios.
+Resultado esperado:
+Os valores totais apresentados no Relatório de Rateio Analítico devem corresponder aos valores totais apresentados no Relatório de Lançamentos.
+Resultado atual:
+Os valores totais apresentados nos dois relatórios apresentam diferenças, indicando uma possível inconsistência nos dados ou na forma como os relatórios são gerados.

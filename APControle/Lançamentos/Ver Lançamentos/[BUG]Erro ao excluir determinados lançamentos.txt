@@ -1,0 +1,17 @@
+Erro ao excluir determinados lançamentos
+
+Pré-requisitos:
+- Ter acesso ao módulo de Lançamentos no sistema APControle.
+- Ter lançamentos cadastrados no sistema.
+Passos para reproduzir o erro:
+1. Acesse o módulo de Lançamentos no sistema APControle.
+2. Navegue até a seção de Ver Lançamentos.
+3. Selecione um lançamento específico que deseja excluir.
+4. Clique na opção de excluir o lançamento.
+5. Confirme a exclusão do lançamento.
+Resultado esperado:
+O lançamento selecionado deve ser excluído do sistema sem apresentar erros.
+Resultado atual:
+Ao tentar excluir determinados lançamentos, o sistema apresenta uma mensagem de erro e o lançamento não é removido do sistema.
+Mensagem de erro exibida:
+"Houve um erro no processamento da sua requisição. Favor entre em contato com o suporte."

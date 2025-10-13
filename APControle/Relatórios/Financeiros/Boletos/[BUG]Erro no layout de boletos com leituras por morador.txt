@@ -1,0 +1,14 @@
+Erro no layout de boletos com leituras por morador
+
+Ao gerar boletos com leituras por morador, o sistema apresenta um erro no layout do boleto, onde as informações de leitura e consumo não são exibidas corretamente.
+
+Passos para reproduzir o erro:
+1. Acesse o módulo de Financeiro no sistema APControle.
+2. Selecione a opção de geração de boletos.
+3. Escolha a opção de boletos com leituras por morador.
+4. Gere o boleto para um morador específico.
+5. Visualize o boleto gerado.
+Resultado esperado:
+O boleto deve exibir corretamente as informações de leitura e consumo do morador.
+Resultado atual:
+O boleto apresenta um layout desconfigurado, com informações faltando ou mal posicionadas.
