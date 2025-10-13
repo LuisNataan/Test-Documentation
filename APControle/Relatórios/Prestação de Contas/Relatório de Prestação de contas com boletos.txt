@@ -1,0 +1,54 @@
+
+
+Pré-requisitos:
+Ter uma prestação de conta já criada
+
+Dado que estou na tela de Prestação de Conta
+E clico no botão de Ações
+E clico em Editar
+E na seção de Ações clico em Editar
+E deve abrir modal de Configuração de Relatórios - Boletos
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E deixo vazio campo Colunas exibidas
+E clico no botão Gerar
+Então devo mostrar mensagem de erro "Selecione ao menos uma coluna para gerar o relatório."
+ 
+Relatório de Prestação de Contas com 1 coluna
+ 
+Dado que estou na tela de Prestação de Conta
+E clico no botão de Ações
+E clico em Editar
+E na seção de Ações clico em Editar
+E deve abrir modal de Configuração de Relatórios - Boletos
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E seleciono uma opção no campo Colunas exibidas (Ex.: Data Gerado)
+E clico no botão Gerar
+Então devo mostrar somente a coluna selecionada ao gerar relatório
+ 
+Relatório de Prestação de Contas com 3 colunas
+ 
+Dado que estou na tela de Prestação de Conta
+E clico no botão de Ações
+E clico em Editar
+E na seção de Ações clico em Editar
+E deve abrir modal de Configuração de Relatórios - Boletos
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E seleciono três opções no campo Colunas exibidas (Ex.: Data Gerado, Bloco e Valor)
+E clico no botão Gerar
+Então devo mostrar somente as colunas selecionada ao gerar relatório
+ 
+Relatório de Prestação de Contas com todas as colunas selecionadas
+ 
+Dado que estou na tela de Prestação de Conta
+E clico no botão de Ações
+E clico em Editar
+E na seção de Ações clico em Editar
+E deve abrir modal de Configuração de Relatórios - Boletos
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E seleciono todas as opções no campo Colunas exibidas
+E clico no botão Gerar
+Então devo mostrar todas as colunas ao gerar relatório sem quebrar linhas

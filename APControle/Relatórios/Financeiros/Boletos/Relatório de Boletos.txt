@@ -1,0 +1,51 @@
+Relatório de Boletos sem selecionar coluna
+
+Dado que estou na tela inicial do sistema
+E abro aba Relatórios
+E abro aba Financeiro
+E clico em Boletos
+E seleciono Condomínios
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E deixo vazio campo Colunas exibidas
+E clico no botão Gerar
+Então devo mostrar mensagem de erro "Selecione ao menos uma coluna para gerar o relatório."
+
+Relatório de Boletos com 1 coluna
+
+Dado que estou na tela inicial do sistema
+E abro aba Relatórios
+E abro aba Financeiro
+E clico em Boletos
+E seleciono Condomínios
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E seleciono uma opção no campo Colunas exibidas (Ex.: Data Gerado)
+E clico no botão Gerar
+Então devo mostrar somente a coluna selecionada ao gerar relatório
+
+Relatório de Boletos com 3 colunas
+ 
+Dado que estou na tela inicial do sistema
+E abro aba Relatórios
+E abro aba Financeiro
+E clico em Boletos
+E seleciono Condomínios
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E seleciono três opções no campo Colunas exibidas (Ex.: Data Gerado, Bloco e Valor)
+E clico no botão Gerar
+Então devo mostrar somente as colunas selecionada ao gerar relatório
+
+Relatório de Boletos com todas as colunas selecionadas
+ 
+Dado que estou na tela inicial do sistema
+E abro aba Relatórios
+E abro aba Financeiro
+E clico em Boletos
+E seleciono Condomínios
+E seleciono Mês de referência inicial
+E seleciono Mês de referência final
+E seleciono todas as opções no campo Colunas exibidas
+E clico no botão Gerar
+Então devo mostrar todas as colunas ao gerar relatório sem quebrar linhas
