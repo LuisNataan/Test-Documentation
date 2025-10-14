@@ -22,3 +22,23 @@ E clico no botão Ir para Listagem
 E abro a Receita lançada
 E devo mostrar Cobrar de Inquilino
 Então devo mostrar Fundo de Reserva como Sim
+
+Lançar receita com fundo de reserva para proprietários
+
+Dado que estou na tela inicial do sistema
+E abro a aba Lançamentos
+E clico em Lançar Receita
+E seleciono um Condomínio
+E adiciono Descrição do lançamento
+E seleciono Conta da receita
+E informo um Valor
+E informo Rateio como Cobrar de todas as unidades
+E habilito checkbox Incluir taxa de fundo de reserva para proprietário
+E informo Forma de divisão como Igualmente para todas as unidades
+E seleciono o mês para Incluir rateio na fatura
+E seleciono Inquilino no campo Cobrar de
+E clico em Salvar
+E devo salvar Receita corretamente
+E clico no botão Ir para Listagem
+E deve uma receita para cada proprietário efetuando o rateio
+Então não é possível visualizar checkbox para excluir lançamentos
