@@ -1,0 +1,191 @@
+Agendar mudanças
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início
+E informo horário de término
+E clico em Salvar
+E deve exibir mensagem de sucesso "Agendamento criado com sucesso."
+Então o agendamento deve ser salvo no sistema
+
+Agendar mudança sem preencher campos obrigatórios
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E clico em Salvar
+Então não deve salvar o agendamento
+
+Agendar mudança com horário de término menor que o horário de início
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início "14:00"
+E informo horário de término "12:00"
+E clico em Salvar
+Então não deve permitir o agendamento e deve exibir mensagem de erro "O horário de término deve ser maior que o horário de início."
+
+Agendar mudança em um horário já agendado
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início "10:00"
+E informo horário de término "12:00"
+E clico em Salvar
+E deve exibir mensagem de sucesso "Agendamento criado com sucesso."
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono o mesmo Condomínio
+E seleciono a mesma Unidade
+E seleciono a mesma Data
+E seleciono Tipo de mudança
+E informo horário de início "11:00"
+E informo horário de término "13:00"
+E clico em Salvar
+Então deve exibir mensagem de erro "O horário informado já foi agendado."
+
+Agendar mudança com dados inválidos
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início "abc"
+E informo horário de término "xyz"
+E clico em Salvar
+Então não deve permitir o agendamento e deve exibir mensagem de erro "Não foi possível salvar o agendamento."
+
+Agendar mudança com data passada
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E no calendário seleciono uma Data passada
+Então não deve permitir selecionar datas passadas
+
+Agendar mudança e depois editar o agendamento
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início
+E informo horário de término
+E clico em Salvar
+E deve exibir mensagem de sucesso "Agendamento criado com sucesso."
+E localizo o agendamento criado na lista
+E clico em Editar
+E altero o horário de término
+E clico em Salvar
+E deve exibir mensagem de sucesso "Agendamento atualizado com sucesso."
+Então o agendamento deve ser atualizado no sistema
+
+Agendar mudança e depois excluir o agendamento
+
+Pré-requisito:
+Configuração de mudança deve estar com a checkbox "Necessita aprovação" marcada
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início
+E informo horário de término
+E clico em Salvar
+E deve exibir mensagem de sucesso "Agendamento criado com sucesso."
+E localizo o agendamento criado na lista
+E clico em Excluir
+E confirmo a exclusão
+Então deve exibir mensagem de sucesso "Agendamento excluído com sucesso."
+
+Aprovar mudança
+Pré-requisito:
+Configuração de mudança deve estar com a checkbox "Necessita aprovação" marcada
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início
+E informo horário de término
+E clico em Salvar
+E deve exibir mensagem de sucesso "Agendamento criado com sucesso."
+E localizo o agendamento criado na lista
+E clico no botão Ações com o mouse
+E clico em Aprovar
+E confirmo a aprovação
+Então deve exibir mensagem de sucesso "Agendamento aprovado com sucesso."
+
+Desaprovar mudança
+Pré-requisito:
+Configuração de mudança deve estar com a checkbox "Necessita aprovação" marcada
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início
+E informo horário de término
+E clico em Salvar
+E deve exibir mensagem de sucesso "Agendamento criado com sucesso."
+E localizo o agendamento criado na lista
+E clico no botão Ações com o mouse
+E clico em Desaprovar
+E confirmo a desaprovação
+Então deve exibir mensagem de sucesso "Agendamento desaprovado com sucesso."
