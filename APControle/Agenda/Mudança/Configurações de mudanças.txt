@@ -1,0 +1,249 @@
+Configurar mudanças
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças apenas entrada
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança "Entrada"
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças apenas saída
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança "Saída"
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças sem preencher campos obrigatórios
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E clico em Salvar
+Então devo ver a mensagem "Não foi possível configurar. Tente novamente ou contate o suporte."
+
+Configurar mudanças com horário de término menor que o horário de início
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "12:00"
+E informo horário de término "09:00"
+E clico em Salvar
+Então devo ver a mensagem "Horário de término deve ser maior que o horário de início."
+
+Configurar mudanças com horário de início igual ao horário de término
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "09:00"
+E clico em Salvar
+Então devo ver a mensagem "Não foi possível configurar. Tente novamente ou contate o suporte."
+
+Configurar mais de um dia da semana
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono Segunda-feira e Quarta-feira como Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças para dias da semana com diferentes horários
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono Segunda-feira
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E seleciono Quarta-feira
+E informo horário de início "13:00"
+E informo horário de término "16:00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças com checkbox de aprovação habilitado
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E marco o checkbox "É necessária aprovação?"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças com checkbox de taxa habilitado
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E marco o checkbox "Tem taxa?"
+E informo valor da taxa "150.00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças com checkbox de aprovação e taxa habilitados
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E marco o checkbox "É necessária aprovação?"
+E marco o checkbox "Tem taxa?"
+E informo valor da taxa "150.00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças com taxa sem informar valor
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E marco o checkbox "Tem taxa?"
+E clico em Salvar
+Então devo ver a mensagem "Não foi possível configurar. Tente novamente ou contate o suporte."
+
+Configurar mudanças limitando quantidade de mudanças por bloco
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E informo Quantidade de mudanças por bloco "2"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças com dias de antecedência para agendamento
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E informo Dias de antecedência para agendamento "3"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudanças checkbox para mostrar agendamento no calendário
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E marco o checkbox "Mostrar agendamento no calendário?"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
+
+
