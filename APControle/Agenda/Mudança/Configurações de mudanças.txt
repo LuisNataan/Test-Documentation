@@ -246,4 +246,97 @@ E marco o checkbox "Mostrar agendamento no calendário?"
 E clico em Salvar
 Então devo ver a mensagem "Configuração criada com sucesso."
 
+Configurar mudanças e depois editar
 
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E informo Quantidade de mudanças por bloco "2"
+E informo Dias de antecedência para agendamento "3"
+E clico em Salvar
+E devo ver a mensagem "Configuração criada com sucesso."
+Dado que estou na tela de configurações de mudanças
+E clico em Editar no registro criado
+E devo abrir tela Editar configuração de mudança
+E altero o horário de término para "13:00"
+E clico em Salvar
+Então devo ver a mensagem "Configuração atualizada com sucesso."
+
+Configurar mudanças e depois excluir
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E informo Quantidade de mudanças por bloco "2"
+E informo Dias de antecedência para agendamento "3"
+E clico em Salvar
+E devo ver a mensagem "Configuração criada com sucesso."
+Dado que estou na tela de configurações de mudanças
+E clico em Excluir no registro criado
+E confirmo a exclusão
+Então devo ver a mensagem "Configuração excluída com sucesso."
+
+Configurar mudanças e depois tentar excluir uma configuração que está sendo usada em um agendamento
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E informo Quantidade de mudanças por bloco "2"
+E informo Dias de antecedência para agendamento "3"
+E clico em Salvar
+E devo ver a mensagem "Configuração criada com sucesso."
+Dado que estou na tela de Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono o mesmo Condomínio da configuração criada
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início
+E informo horário de término
+E clico em Salvar
+E devo ver a mensagem "Mudança agendada com sucesso."
+Dado que estou na tela de configurações de mudanças
+E clico em Excluir no registro da configuração criada
+E devo abrir modal para inserir senha e confirmar exclusão
+E informo minha senha
+E confirmo a exclusão
+Então devo ver a mensagem "Não foi possível excluir a configuração de mudança. Por favor, entre em contato com o suporte."
+
+Configurar mudança com descrição
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E estou na tela de configurações de mudanças
+Quando clico em Novo Registro com o mouse
+E devo abrir tela Configurar mudança
+E seleciono um Condomínio
+E seleciono um Tipo de mudança
+E seleciono um Dia da Semana
+E informo horário de início "09:00"
+E informo horário de término "12:00"
+E informo descrição "Mudança de móveis grandes"
+E clico em Salvar
+Então devo ver a mensagem "Configuração criada com sucesso."
