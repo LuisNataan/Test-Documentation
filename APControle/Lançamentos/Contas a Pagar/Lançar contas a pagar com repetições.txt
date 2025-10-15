@@ -1,0 +1,75 @@
+Criar lançamentos de contas a pagar com repetições
+
+Dado que estou na tela inicial do APControle
+E abro a aba de Lançamentos
+E acesso a tela de Contas a Pagar
+Estou na tela de Contas a Pagar
+E clico no botão Novo Registro
+E seleciono um condominio
+E adiciono Descrição
+E informo Conta do ativo ou despesa
+E informo Conta passivo
+E informo Fornecedor
+E informo Data Lançamento
+E informo Valor
+E informo Data Vencimento da primeira parcela
+E informo Número de Parcelas de 1
+E habilito checkbox Repetir Lançamento
+E informo no campo "Quantas vezes você deseja que o lançamento aconteca?" 2
+E informo no campo Índice inicial da repetição 1
+E informo no campo Índice final da repetição 2
+E clico no botão Salvar
+Quando clico no botão Salvar
+A conta a pagar deve ser salva com sucesso
+E acesso a tela de Contas a Pagar
+Então deve existir 2 contas a pagar com a mesma descrição
+
+Editar lançamentos de contas a pagar com repetições
+
+Pré-requisitos:
+Deve possuir contas a pagar cadastradas no APControle.
+Conta a pagar deve possuir repetições.
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar com repetições
+E clico no botão Ações com o mouse
+E clico no botão Editar
+E estou na tela Atualizar contas a pagar
+E atualizo as repetições para 4
+E informo no campo Índice inicial da repetição 1
+E informo no campo Índice final da repetição 4
+E clico no botão Salvar
+Quando clico no botão Salvar
+A conta a pagar deve ser salva com sucesso
+E acesso a tela de Contas a Pagar
+Então deve existir 4 contas a pagar com a mesma descrição
+
+Excluir lançamentos de contas a pagar com repetições
+
+Pré-requisitos:
+Deve possuir contas a pagar cadastradas no APControle.
+Conta a pagar deve possuir repetições.
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar com repetições
+E clico no botão Ações com o mouse
+E clico no botão Excluir
+Quando clico no botão Excluir
+Então a conta a pagar deve ser excluida com sucesso
+
+Visualizar contas a pagar com repetições
+
+Pré-requisitos:
+Deve possuir contas a pagar cadastradas no APControle.
+Contas a pagar devem possuir repetições.
+
+Quando acesso a tela de Contas a Pagar
+Então deve listar as contas a pagar com repetições
+
+Visualizar contas a pagar sem repetições
+
+Pré-requisitos:
+Deve possuir contas a pagar cadastradas no APControle.
+
+Quando acesso a tela de Contas a Pagar
+Então deve listar as contas a pagar sem repetições
