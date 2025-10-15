@@ -1,0 +1,68 @@
+Unificar faturas de unidade com mesmo proprietário
+
+Pré-requisitos:
+Morador deve possuir faturas com status Falta Fechamento
+Deve haver duas ou mais faturas abertas
+Faturas devem estar no mesmo mês de competência
+Faturas devem ser da mesma competência
+Faturas devem ser do mesmo proprietário
+
+Dado que estou na tela inicial do sistema
+E abro aba Cobranças
+E clico em Faturas
+Seleciono Condomínio
+E seleciono Período de Tempo (Ex.: Jan/2025-Fev/2025)
+E clico no botão Avançado
+E informo no campo Proprietário/Inquilino (Ex.: João da Silva)
+E clico no botão Filtrar
+Devo mostrar as faturas do Proprietário
+E clico no botão Unificar Faturas
+E devo abrir modal Unificar Faturas Selecionadas
+E informo senha
+E clico no botão Confirmar
+Então faturas são unificadas
+
+Unificar faturas do mesmo proprietário com unidades diferentes
+
+Pré-requisitos:
+Morador deve possuir faturas com status Falta Fechamento
+Deve haver duas ou mais faturas abertas
+Faturas devem estar no mesmo mês de competência
+Faturas devem ser da mesma competência
+Faturas devem ser do mesmo proprietário
+
+Dado que estou na tela inicial do sistema
+E abro aba Cobranças
+E clico em Faturas
+Seleciono Condomínio
+E seleciono Período de Tempo (Ex.: Jan/2025-Fev/2025)
+E clico no botão Avançado
+E informo no campo Proprietário/Inquilino (Ex.: João da Silva)
+E clico no botão Filtrar
+Devo mostrar as faturas do Proprietário
+E seleciono faturas de unidades diferentes
+E clico no botão Unificar Faturas
+E devo mostrar mensagem de erro "Somente faturas do mesmo proprietário podem ser unificadas"
+Então faturas não são unificadas
+
+Unificar faturas com tipo diferentes
+
+Pré-requisitos:
+Morador deve possuir faturas com status Falta Fechamento
+Deve haver duas ou mais faturas abertas
+Faturas devem estar no mesmo mês de competência
+Faturas devem ser de tipos diferentes
+
+Dado que estou na tela inicial do sistema
+E abro aba Cobranças
+E clico em Faturas
+Seleciono Condomínio
+E seleciono Período de Tempo (Ex.: Jan/2025-Fev/2025)
+E clico no botão Avançado
+E informo no campo Proprietário/Inquilino (Ex.: João da Silva)
+E clico no botão Filtrar
+Devo mostrar as faturas do Proprietário
+E seleciono faturas de tipos diferentes
+E clico no botão Unificar Faturas
+E devo mostrar mensagem de erro "Somente faturas do mesmo tipo podem ser unificadas"
+Então faturas não são unificadas
