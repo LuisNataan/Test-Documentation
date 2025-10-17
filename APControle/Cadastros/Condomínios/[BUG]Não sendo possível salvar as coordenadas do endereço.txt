@@ -1,0 +1,14 @@
+[BUG]Não sendo possível salvar as coordenadas do endereço
+
+Pré-requisitos:
+Possuir um condomínio cadastrado
+
+Dado que estou na tela de Condomínios
+E clico em Condomínio
+E clico no botão Ações
+E clico em Editar
+E estou na tela Editar Condomínio
+E altero o endereço do condomínio para um endereço que possua acentos
+E clico no botão Salvar
+E devo mostrar mensagem de erro "Não foi possível registrar as coordenadas do endereço."
+Então o endereço do condomínio não é atualizado

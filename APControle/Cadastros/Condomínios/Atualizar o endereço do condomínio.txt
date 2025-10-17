@@ -1,0 +1,13 @@
+Atualizar o endereço do condomínio
+
+Pré-requisitos:
+Possuir um condomínio cadastrado
+
+Dado que estou na tela de Condomínios
+E clico em Condomínio
+E clico no botão Ações
+E clico em Editar
+E estou na tela Editar Condomínio
+E altero o endereço do condomínio
+E clico no botão Salvar
+Então o endereço do condomínio deve ser atualizado com sucesso
