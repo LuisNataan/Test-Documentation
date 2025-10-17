@@ -1,0 +1,74 @@
+Cadastrar novo condomínio
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Condomínios
+E estou na tela Condomínios
+E clico no botão Novo Registro
+E estou na tela Cadastrar Novo Condomínio
+E informo nome do Condomínio
+E informo endereço do Condomínio
+E clico no botão Salvar
+E devo mostrar mensagem "Condomínio cadastrado com sucesso."
+Então cadastro é realizado com sucesso
+
+Cadastrar novo condomínio sem informar endereço
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Condomínios
+E estou na tela Condomínios
+E clico no botão Novo Registro
+E estou na tela Cadastrar Novo Condomínio
+E informo nome do Condomínio
+E clico no botão Salvar
+E devo mostrar mensagem "Endereço do condomínio deve ser informado."
+Então cadastro não é realizado
+
+Cadastrar novo condomínio sem informar nome
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Condomínios
+E estou na tela Condomínios
+E clico no botão Novo Registro
+E estou na tela Cadastrar Novo Condomínio
+E informo endereço do Condomínio
+E clico no botão Salvar
+E devo mostrar mensagem "Nome do condomínio deve ser informado."
+Então cadastro não é realizado
+
+Cadastrar novo condomínio informando CNPJ
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Condomínios
+E estou na tela Condomínios
+E clico no botão Novo Registro
+E estou na tela Cadastrar Novo Condomínio
+E informo nome do Condomínio
+E informo CNPJ do Condomínio
+E informo endereço do Condomínio
+E clico no botão Salvar
+E devo mostrar mensagem "Condomínio cadastrado com sucesso."
+Então cadastro é realizado com sucesso
+
+Efetuar cadastro completo de novo condomínio
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Condomínios
+E estou na tela Condomínios
+E clico no botão Novo Registro
+E estou na tela Cadastrar Novo Condomínio
+E informo nome do Condomínio
+E informo CNPJ do Condomínio
+E informo data no campo Data da Assembleia geral ordinária (Ex.:15/11)
+E informo no campo Dias para despacho do edital de convocação (Ex.:5)
+E informo CEP do Condomínio
+E API deve autocompletar o endereço
+E seleciono a opção Configuração Padrão no campo "Configurações aplicadas ao novo condomínio (plano de contas, permissões e parâmetros)"
+E clico no botão Salvar
+E devo mostrar mensagem "Condomínio cadastrado com sucesso."
+Então cadastro é realizado com sucesso
+
