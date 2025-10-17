@@ -1,0 +1,21 @@
+Editar franquia na administradora
+
+Pré-requisitos:
+Estar logado com uma conta de administradora
+Possuir uma franquia cadastrada
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Administradoras
+E estou na tela Administradoras
+E seleciono Franquia
+E clico no botão Ações
+E clico no botão Editar
+E estou na tela Editar Franquia
+E informo nome da Franquia
+E informo documento da Franquia (CNPJ)
+E informo telefone da Franquia
+E informo CEP da Franquia
+E clico no botão Salvar
+E devo mostrar mensagem "Franquia atualizada com sucesso."
+Então edição é realizada com sucesso
