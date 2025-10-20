@@ -1,0 +1,107 @@
+Cancelar bloqueio de reserva da área comum
+
+Pré-requisitos:
+Condomínio deve ter área comum cadastrada
+Área comum deve possuir reserva
+Área comum deve estar configurada com período de reserva para o dia todo
+Permissão de usuário deve possuir opção "Visualizar calendário reserva de área comum"
+Deve estar desativada a opção "Exibir o nome na reserva"
+
+Dado que estou na tela inicial do sistema
+E abro a aba Agenda
+E clico em Áreas Comuns
+E clico em Reservas Áreas Comuns
+E seleciono Condomínio
+E seleciono Área Comum
+E seleciono uma data para reserva
+E devo abrir modal de Nova Reserva
+E seleciono Unidade
+E seleciono Morador
+E informo Motivo
+E informo Lista de Convidados
+E clico no botão Criar Bloqueio dia inteiro
+E reserva é criada com bloqueio da data selecionada
+E clico na reserva criada
+E clico no botão Cancelar reserva
+Então a reserva deve ser cancelada
+
+Cancelar bloqueio de reserva da área comum com período de reserva por horário
+
+Pré-requisitos:
+Condomínio deve ter área comum cadastrada
+Área comum deve possuir reserva
+Área comum deve estar configurada com período de reserva por horário
+Permissão de usuário deve possuir opção "Visualizar calendário reserva de área comum"
+Deve estar desativada a opção "Exibir o nome na reserva"
+
+Dado que estou na tela inicial do sistema
+E abro a aba Agenda
+E clico em Áreas Comuns
+E clico em Reservas Áreas Comuns
+E seleciono Condomínio
+E seleciono Área Comum
+E seleciono uma data para reserva
+E devo abrir modal de Nova Reserva
+E seleciono Unidade
+E seleciono Morador
+E informo Motivo
+E informo Lista de Convidados
+E clico no botão Criar Bloqueio
+E reserva é criada com bloqueio da data selecionada
+E clico na reserva criada
+E clico no botão Cancelar reserva
+Então a reserva deve ser cancelada
+
+Cancelar bloqueio de reserva da área comum com horário padrão
+
+Pré-requisitos:
+Condomínio deve ter área comum cadastrada
+Área comum deve possuir reserva
+Área comum deve estar configurada com horário padrão
+Permissão de usuário deve possuir opção "Visualizar calendário reserva de área comum"
+Deve estar desativada a opção "Exibir o nome na reserva"
+
+Dado que estou na tela inicial do sistema
+E abro a aba Agenda
+E clico em Áreas Comuns
+E clico em Reservas Áreas Comuns
+E seleciono Condomínio
+E seleciono Área Comum
+E seleciono uma data para reserva
+E devo abrir modal de Nova Reserva
+E seleciono Unidade
+E seleciono Morador
+E informo Motivo
+E informo Lista de Convidados
+E clico no botão Criar Bloqueio
+E reserva é criada com bloqueio da data selecionada
+E clico na reserva criada
+E clico no botão Cancelar reserva
+Então a reserva deve ser cancelada
+
+Cancelar bloqueio de reserva da área comum com horário por período
+
+Pré-requisitos:
+Condomínio deve ter área comum cadastrada
+Área comum deve possuir reserva
+Área comum deve estar configurada com horário por período
+Permissão de usuário deve possuir opção "Visualizar calendário reserva de área comum"
+Deve estar desativada a opção "Exibir o nome na reserva"
+
+Dado que estou na tela inicial do sistema
+E abro a aba Agenda
+E clico em Áreas Comuns
+E clico em Reservas Áreas Comuns
+E seleciono Condomínio
+E seleciono Área Comum
+E seleciono uma data para reserva
+E devo abrir modal de Nova Reserva
+E seleciono Unidade
+E seleciono Morador
+E informo Motivo
+E informo Lista de Convidados
+E clico no botão Criar Bloqueio
+E reserva é criada com bloqueio da data selecionada
+E clico na reserva criada
+E clico no botão Cancelar reserva
+Então a reserva deve ser cancelada
