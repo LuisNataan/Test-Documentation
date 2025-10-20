@@ -1,0 +1,102 @@
+Cadastrar Área Comum com cobrança de multa
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Áreas Comuns
+E estou na tela Áreas Comuns
+E seleciono Condomínio
+E clico no botão Novo Registro
+E estou na tela Cadastrar Área Comum
+E informo nome da Área Comum
+E informo tamanho(m²) da Área Comum
+E informo lotação máxima da Área Comum
+E seleciono a opção Sim no campo "É necessário agendamento?"
+E seleciono a opção Período no campo "Tipo Reserva"
+E seleciono os dias no campo "Dias permitidos para reserva"
+E na seção Taxas e Multas
+Seleciono a opção Sim no campo "Tem multa"
+E informo valor da multa
+E informo a quantidade de dias 1 no campo "Dias cancelamento"
+E clico no botão Salvar
+E devo mostrar mensagem "Área comum criada com sucesso."
+Então cadastro é realizado com sucesso
+
+Cadastrar Área Comum com cobrança de multa e definir responsável pela cobrança como Proprietário
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Áreas Comuns
+E estou na tela Áreas Comuns
+E seleciono Condomínio
+E clico no botão Novo Registro
+E estou na tela Cadastrar Área Comum
+E informo nome da Área Comum
+E informo tamanho(m²) da Área Comum
+E informo lotação máxima da Área Comum
+E seleciono a opção Sim no campo "É necessário agendamento?"
+E seleciono a opção Período no campo "Tipo Reserva"
+E seleciono os dias no campo "Dias permitidos para reserva"
+E na seção Taxas e Multas
+Seleciono a opção Sim no campo "Tem taxa de uso"
+E informo valor da multa
+E informo a quantidade de dias 1 no campo "Dias cancelamento"
+E seleciono o responsável pela cobrança como Proprietário
+E clico no botão Salvar
+E devo mostrar mensagem "Área comum criada com sucesso."
+Então cadastro é realizado com sucesso
+
+Cadastrar Área Comum com cobrança de multa e definir responsável pela cobrança como Inquilino
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Áreas Comuns
+E estou na tela Áreas Comuns
+E seleciono Condomínio
+E clico no botão Novo Registro
+E estou na tela Cadastrar Área Comum
+E informo nome da Área Comum
+E informo tamanho(m²) da Área Comum
+E informo lotação máxima da Área Comum
+E seleciono a opção Sim no campo "É necessário agendamento?"
+E seleciono a opção Período no campo "Tipo Reserva"
+E seleciono os dias no campo "Dias permitidos para reserva"
+E na seção Taxas e Multas
+Seleciono a opção Sim no campo "Tem taxa de uso"
+E informo valor da multa
+E informo a quantidade de dias 1 no campo "Dias cancelamento"
+E seleciono o responsável pela cobrança como Inquilino
+E clico no botão Salvar
+E devo mostrar mensagem "Área comum criada com sucesso."
+Então cadastro é realizado com sucesso
+
+Editar responsável pela cobrança da Área Comum
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Áreas Comuns
+E estou na tela Áreas Comuns
+E seleciono Condomínio
+E clico no botão Novo Registro
+E estou na tela Cadastrar Área Comum
+E informo nome da Área Comum
+E informo tamanho(m²) da Área Comum
+E informo lotação máxima da Área Comum
+E seleciono a opção Sim no campo "É necessário agendamento?"
+E seleciono a opção Período no campo "Tipo Reserva"
+E seleciono os dias no campo "Dias permitidos para reserva"
+E na seção Taxas e Multas
+Seleciono a opção Sim no campo "Tem taxa de uso"
+E informo valor da multa
+E informo a quantidade de dias 1 no campo "Dias cancelamento"
+E seleciono o responsável pela cobrança como Proprietário
+E clico no botão Salvar
+E devo mostrar mensagem "Área comum criada com sucesso."
+Dado que estou na tela de Área Comuns
+E seleciono a Área Comum
+Clico no botão Ações com o mouse
+E clico no botão Editar
+E estou na tela Editar Área Comum
+E altero o responsável pela cobrança como Inquilino
+E clico no botão Salvar
+E devo mostrar mensagem "Área comum atualizada com sucesso."
+Então alteração é realizado com sucesso

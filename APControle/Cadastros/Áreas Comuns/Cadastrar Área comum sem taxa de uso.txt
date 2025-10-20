@@ -1,0 +1,21 @@
+Cadastrar Área Comum sem taxa de uso
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Áreas Comuns
+E estou na tela Áreas Comuns
+E seleciono Condomínio
+E clico no botão Novo Registro
+E estou na tela Cadastrar Área Comum
+E infromo nome da Área Comum
+E informo tamanho(m²) da Área Comum
+E informo lotação máxima da Área Comum
+E seleciono a opção Sim no campo "É necesario agendamento?"
+E seleciono a opção Período no campo "Tipo Reserva"
+E seleciono os dias no campo "Dias permitidos para reserva"
+E na seção Taxas e Multas
+Seleciono a opção Não no campo "Tem taxa de uso"
+E clico no botão Salvar
+E devo mostrar mensagem "Área comum criada com sucesso."
+E cadastro é realizado com sucesso
+Então não haverá cobranças de multa e taxa de uso nas faturas
