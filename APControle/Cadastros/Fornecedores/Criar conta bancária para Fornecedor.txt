@@ -1,0 +1,34 @@
+Criar conta bancária para Fornecedor
+
+Pré-requisitos:
+Possuir fornecedor cadastrado
+Deve estar habilitada a opção Habilitar contas a pagar no backend do APControle.
+
+Dado que estou na tela de Fornecedores
+E clico em Novo Registro
+E informo o nome do fornecedor
+E informo o CPF/CNPJ do Fornecedor
+E habilito a checkbox Criar conta bancária para o fornecedor
+E informo Condomínio
+E informo Telefone
+E informo E-mail
+E informo Tipo de serviço (ex.: Jardineiro)
+E clico em Salvar
+E devo mostrar mensagem "Fornecedor cadastrado com sucesso."
+Dado que estou na tela Fornecedores
+E selecione o fornecedor criado
+E clico no botão Ações
+E clico no botão Editar
+E estou na tela Editar Fornecedor
+E na seção Contas Bancárias
+Clico no botão Adicionar
+E devo abrir Conta Bancária
+E seleciono o Banco
+E informo a Conta
+E informo a Agência
+E informo o Digito
+E informo Número da Conta
+E informo Dígito da conta
+E informo tipo da conta
+E clico no botão Salvar
+Então devo salvar Conta Bancária com sucesso
