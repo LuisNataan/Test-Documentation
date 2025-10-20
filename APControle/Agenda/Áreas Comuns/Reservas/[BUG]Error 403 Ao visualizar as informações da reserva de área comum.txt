@@ -1,0 +1,14 @@
+"Error 403" ao visualizar as informações da reserva de área comum
+
+Pré-requisitos:
+Condominio deve ter área comum cadastrada
+Área comum deve possuir reserva
+Permissão de usuário deve possuir opção "Visualizar calendário reserva de área comum"
+Deve estar desativada a opção "Exibir o nome na reserva"
+
+Dado que estou na tela inicial do sistema
+E tenho reservas na minha Área Comum
+E abro a aba Agenda
+E clico em Reservas Áreas Comuns
+E seleciono uma reserva
+Então devo mostrar mensagem de erro "Error 403"
