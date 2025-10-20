@@ -1,0 +1,34 @@
+Cobrar valor mínimo nas leituras
+
+Pré-requisitos:
+Deve estar habilitada a opção de leituras de água nas configurações do Condomínios
+Deve estar habilitada a opção Cobrança por valor total da fatura de água nas configurações do Condomínios
+Valor mínimo de unidades residenciais e comerciais devem ser informado
+
+Dado que estou na tela de Leituras de Relógios
+E seleciono um condomínio
+E informo o mês de competência da leitura
+E informo Data da leitura
+E informo o valor da leitura de cada unidade
+E informo valor total da fatura de água
+E seleciono Inquilino no campo Cobrar de
+E clico no botão Salvar leituras
+E clico no botão Cobrar de todas as unidades
+E deve salvar leituras corretamente
+E acesso a tela de Faturas
+E acesso uma fatura de água
+Então devo mostrar o valor mínimo da fatura de água com o  valor total da fatura
+
+Cobrar valor mínimo nas leituras sem informar acrescimo na leitura de água
+
+Dado que estou na tela de Leituras de Relógios
+E seleciono um condomínio
+E informo o mês de competência da leitura
+E informo Data da leitura
+E informo o mesmo valor da leitura de cada unidade do mês anterior
+E valor total da fatura de água deve ser o valor mínimo da fatura
+E cobro de todas as unidades
+E acessoa tela de Faturas
+E seleciono uma fatura
+Então o valor da fatura de água deve ser o valor mínimo da leitura
+
