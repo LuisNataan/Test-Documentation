@@ -1,0 +1,24 @@
+Cadastrar Morador no Conselho
+
+Pré-requisitos:
+- Ter um condomínio cadastrado no sistema.
+- Ter um morador cadastrado no sistema.
+- Morador deve estar ativo.
+- Morador deve possuir cargo como Conselheiro cadastrado anteriormente.
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cadastros
+E clico em Conselho
+E estou na tela Conselho
+E seleciono o condomínio desejado
+E clico no botão Novo Registro
+E estou na tela Cadastrar Morador no Conselho
+E habilito a checkbox "Utilizar morador do condomínio"
+E seleciono o Cargo do morador no conselho como "Conselheiro"
+E seleciono o Morador desejado
+E seleciono o Status como "Ativo"
+E informo a Data de Início do mandato
+E informo a Data de Término do mandato
+E clico no botão Salvar
+E devo mostrar mensagem "Morador cadastrado no conselho com sucesso."
+E então o cadastro é realizado com sucesso
