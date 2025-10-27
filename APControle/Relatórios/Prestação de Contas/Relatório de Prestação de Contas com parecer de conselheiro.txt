@@ -1,0 +1,32 @@
+Relatório de Prestação de Contas com parecer de conselheiro
+
+Pré-requisitos:
+- Condomínio deve possuir conselheiros cadastrados.
+
+Dado que estou na tela inicial do sistema
+E abro aba Relatórios
+E clico em Prestação de Contas
+E estou na tela Relatório de Prestação de Contas
+E clico no botão Nova Prestação de Contas
+E seleciono um Condomínio
+E seleciono um Período de Tempo inicial
+E seleciono um Período de Tempo final
+E informo nome do arquivo do relatório
+E clico no botão Salvar
+E estou na tela de Atualizações de Prestação de Contas
+E habilito a opção "Liberar relatório para os moradores no App"
+E clico no botão Salvar
+E devo mostrar mensagem "Prestação de Contas atualizada com sucesso."
+E clico no botão Gerar Prestação
+E Relatório de Prestação de Contas deve ser mostrado no App Morador
+E clico no botão Relatórios
+E acesso Relatórios de Prestação de Contas
+E seleciono o relatório gerado anteriormente
+E clico no botão Opções
+E clico em "Realizar Parecer"
+E seleciono uma opção de parecer do conselheiro
+E clico na checkbox "Confirmo o texto acima"
+E clico no botão Salvar Parecer
+E devo mostrar mensagem "Parecer salvo com sucesso."
+E então o parecer do conselheiro é registrado com sucesso
+
