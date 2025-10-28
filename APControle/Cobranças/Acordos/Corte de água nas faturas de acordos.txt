@@ -1,0 +1,67 @@
+Fatura em acordo - Com corte de água
+Pré-requisitos:
+- Fatura deve estar em acordo ativo.
+- Fatura deve estar com o status "Pendente/Vencida".
+- Unidade deve ter corte de água.
+
+Dado que estou na tela de "Acordos"
+E crio um novo acordo
+E clico no botão Salvar
+Então deve abrir modal com mensagem "Há fatura(s) com cortes de água em aberto, o que gostaria de fazer?"
+Então devo ver as opções:
+   - Inativar corte de água (mantém o registro)
+   - Excluir corte de água existente
+   - Não alterar corte de água
+
+
+Fatura em acordo - Sem corte de água
+Pré-requisitos:
+Gerar corte de água na unidade.
+Acesso a tela de "Acordos".
+
+Dado que estou na tela de "Acordos"
+E crio um novo acordo
+E acordo não possui corte de água
+E clico no botão Salvar
+Então deve criar acordo sem exibir modal de corte de água
+
+Fatura em acordo - Inativar corte de água (mantém o registro)
+Pré-requisitos:
+Fatura deve estar em acordo ativo.
+Fatura deve estar com o status "Pendente/Vencida".
+Unidade deve ter corte de água.
+
+Dado que estou na tela de "Acordos"
+E crio um novo acordo
+E clico no botão Salvar
+Então deve abrir modal com mensagem "Há fatura(s) com cortes de água em aberto, o que gostaria de fazer?"
+E clico na opção "Inativar corte de água (mantém o registro)"
+E acordo deve ser salvo com sucesso
+Então o corte de água deve ser inativado, mas o registro mantido
+
+Fatura em acordo - Excluir corte de água existente
+Pré-requisitos:
+Fatura deve estar em acordo ativo.
+Fatura deve estar com o status "Pendente/Vencida".
+Unidade deve ter corte de água.
+Dado que estou na tela de "Acordos"
+E crio um novo acordo
+E clico no botão Salvar
+Então deve abrir modal com mensagem "Há fatura(s) com cortes de água em aberto, o que gostaria de fazer?"
+E clico na opção "Excluir corte de água existente"
+E acordo deve ser salvo com sucesso
+Então o corte de água deve ser excluído do sistema
+
+Fatura em acordo - Não alterar corte de água
+Pré-requisitos:
+Fatura deve estar em acordo ativo.
+Fatura deve estar com o status "Pendente/Vencida".
+Unidade deve ter corte de água.
+
+Dado que estou na tela de "Acordos"
+E crio um novo acordo
+E clico no botão Salvar
+Então deve abrir modal com mensagem "Há fatura(s) com cortes de água em aberto, o que gostaria de fazer?"
+E clico na opção "Não alterar corte de água"
+E acordo deve ser salvo com sucesso
+Então o corte de água deve permanecer ativo e inalterado
