@@ -1,0 +1,16 @@
+[BUG]Erro ao aprovar reserva de área comum
+Ao tentar aprovar uma reserva de área comum, o sistema apresenta um erro inesperado, impedindo a conclusão do processo.
+
+Pré-requisitos:
+1. Acesso ao sistema com permissões de síndico.
+2. Usuário de síndico deve ser um morador ativo do condomínio.
+3. A área comum deve estar cadastrada no sistema.
+4. Deve haver uma reserva pendente de aprovação.
+5. Usuário deve possuir permissões de área comum.
+
+Dado que estou na tela inicial do sistema
+E abro a aba Agenda
+E clico em Áreas Comuns
+E seleciono a opção Reservas
+Quando tento aprovar uma reserva pendente
+Então o sistema apresenta tela de erro
