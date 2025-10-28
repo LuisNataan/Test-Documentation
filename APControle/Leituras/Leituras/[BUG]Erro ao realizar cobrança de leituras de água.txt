@@ -1,0 +1,22 @@
+Erro ao realizar cobrança de leituras de água
+
+Pré-requisitos:
+Deve estar habilitada a opção de leituras de água nas configurações do Condomínios
+
+Descrição do problema:
+Ao tentar realizar a cobrança das leituras de água no sistema APControle, ocorre o seguinte erro:
+"Não foi possível salvar a requisição"
+
+Passos para reproduzir o erro:
+1. Acesse o módulo de Leituras no APControle.
+2. Selecione as leituras de água que deseja cobrar.
+3. Clique no botão "Cobrar somente das unidades selecionadas".
+4. Observe o erro que aparece na tela.
+
+Dado que estou na tela de Leituras de Relógios
+E seleciono um condomínio
+E seleciono mês de competência da leitura
+E informo os valores das leituras nas unidades
+E seleciono as unidades para cobrança
+Quando clico em "Cobrar somente das unidades selecionadas"
+Então recebo a mensagem de erro "Não foi possível salvar a requisição"
