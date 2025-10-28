@@ -1,0 +1,135 @@
+Exibir botão Cobrar porcentagem dos lançamentos
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+Então deve existir a opção de cobrar porcentagem dos lançamentos
+
+Cobrar porcentagem dos lançamentos
+Pré-requisitos:
+Condomínio deve ter lançamentos cadastrados
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono um lançamento específico
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+Quando insiro a porcentagem desejada no campo de porcentagem total
+E clico no botão "Lançar Receita"
+E o sistema deve calcular a porcentagem sobre o valor do lançamento
+Então deve adicionar uma nova receita com o valor calculado
+
+Cobrar porcentagem dos lançamentos - Validação de campo obrigatório
+
+Pré-requisitos:
+Condomínio deve ter lançamentos cadastrados
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono um lançamento específico
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+Quando deixo o campo de porcentagem total vazio
+E clico no botão "Lançar Receita"
+Então deve exibir uma mensagem de erro indicando que o campo é obrigatório
+
+Cobrar porcentagem dos lançamentos - Validação de valor máximo
+Pré-requisitos:
+Condomínio deve ter lançamentos cadastrados
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono um lançamento específico
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+Quando insiro um valor maior que 100 no campo de porcentagem total
+E clico no botão "Lançar Receita"
+Então deve exibir uma mensagem de erro indicando que o valor máximo permitido é 100%
+
+Cobrar porcentagem dos lançamentos - Lançamento de mais de uma cobrança
+Pré-requisitos:
+Condomínio deve ter lançamentos cadastrados
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono mais de um lançamento
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+Quando insiro a porcentagem desejada no campo de porcentagem total
+E clico no botão "Lançar Receita"
+E o sistema deve calcular a porcentagem sobre os valores dos lançamentos
+E adiciona uma nova receita com o valor calculado para cada lançamento selecionado
+Então deve exibir uma confirmação de que as receitas foram lançadas com sucesso
+
+Cobrar porcentagem dos lançamentos - Cancelar ação
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono um lançamento específico
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+Quando clico no botão "X" no modal
+Então o modal deve ser fechado sem realizar nenhuma ação
+
+Cobrança de porcentagem dos lançamentos - Lançamento em massa
+
+Pré-requisitos:
+Condomínio deve ter múltiplos lançamentos cadastrados
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono todos os lançamentos disponíveis
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+Quando insiro a porcentagem desejada no campo de porcentagem total
+E clico no botão "Lançar Receita"
+E o sistema deve calcular a porcentagem sobre o valor de cada lançamento selecionado
+E adiciona novas receitas com os valores calculados para cada lançamento
+Então deve exibir uma confirmação de que todas as receitas foram lançadas com sucesso
+
+Cobrança de porcentagem dos lançamentos - Valores diferentes para cada lançamento
+
+Pré-requisitos:
+Condomínio deve ter múltiplos lançamentos cadastrados com valores diferentes
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono múltiplos lançamentos com valores diferentes
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+E informo um valor percentual de desconto para cada lançamento
+E clico no botão "Lançar Receita"
+E o sistema deve calcular a porcentagem sobre o valor de cada lançamento selecionado
+E adiciona novas receitas com os valores calculados para cada lançamento
+Então deve exibir uma confirmação de que todas as receitas foram lançadas com sucesso
+
+Cobrança de porcentagem dos lançamentos - Histórico de cobranças
+
+Pré-requisitos:
+Condomínio deve ter lançamentos cadastrados e cobranças anteriores realizadas
+
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono um lançamento específico
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+Quando insiro a porcentagem desejada no campo de porcentagem total
+E clico no botão "Lançar Receita"
+E o sistema deve calcular a porcentagem sobre o valor do lançamento
+E adiciona uma nova receita com o valor calculado
+Então deve registrar a cobrança no histórico de cobranças do lançamento
+
+Cobrança de porcentagem dos lançamentos - Valores diferentes do valor total
+
+Pré-requisitos:
+Condomínio deve ter múltiplos lançamentos cadastrados com valores diferentes
+Dado que estou na tela inicial do sistema
+E navego até a seção de lançamentos
+E seleciono múltiplos lançamentos com valores diferentes
+E clico no botão "Cobrar porcentagem dos lançamentos"
+E devo abrir modal para inserir a porcentagem
+E informo um valor percentual no campo de porcentagem total
+Quando insiro uma porcentagem diferente para cada lançamento selecionado
+E clico no botão "Lançar Receita"
+E o sistema deve calcular a porcentagem sobre o valor de cada lançamento selecionado
+E adiciona novas receitas com os valores calculados para cada lançamento
+Então deve exibir uma confirmação de que todas as receitas foram lançadas com sucesso
