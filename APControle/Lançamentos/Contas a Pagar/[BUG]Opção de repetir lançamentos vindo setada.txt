@@ -1,0 +1,10 @@
+Opção de repetir lançamentos vindo setada
+
+Pré-requisitos:
+Deve haver lançamentos de contas a pagar cadastrados no sistema APControle.
+
+Dado que estou na tela de Contas a Pagar
+E existem lançamentos cadastrados no sistema
+Quando acesso a tela de cadastro ou edição de um lançamento existente
+E a opção de Repetir Lançamento deve estar marcada
+Então as opções de Repetir lançamentos devem aparecer na tela
