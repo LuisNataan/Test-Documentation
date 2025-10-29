@@ -1,0 +1,13 @@
+Configurações de demonstrativo do boleto informações não ficando salvas em tela
+
+Dado que estou na tela de configurações de demonstrativo do boleto
+E seleciono um condomínio
+E clico no botão Ações
+E clico em Editar
+E deve abrir a tela de configurações de demonstrativo do boleto
+E na seção Configurações de Verso
+E configuro as informações desejadas no campo Informações do verso do boleto
+Quando clico no botão Salvar
+As informações são salvas corretamente
+Quando retornar na tela de configurações de demonstrativo do boleto
+Então as informações configuradas anteriormente no campo Informações do verso do boleto estão sendo mantidas corretamente

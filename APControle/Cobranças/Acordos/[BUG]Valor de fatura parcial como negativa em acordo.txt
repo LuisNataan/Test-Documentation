@@ -1,0 +1,14 @@
+[BUG]Valor de fatura paga parcial como negativa em acordo
+
+Pré-requisitos:
+- Existir um acordo com uma fatura paga parcialmente
+- Faturas devem estar disponíveis para acordo
+
+Cenário: Valor de fatura paga parcial como negativa em acordo
+Dado que estou na tela de acordos
+E existe um acordo com uma fatura paga parcialmente
+E a fatura paga parcialmente tem valor de R$ 100,00 pagos e R$ 200,00 em aberto
+E abro a tela de Acordos
+Quando seleciono a fatura paga parcialmente para inclusão no acordo
+E verifico o valor apresentado para a fatura paga parcialmente no acordo
+Então o valor apresentado para a fatura está negativo
