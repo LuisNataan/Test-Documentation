@@ -1,0 +1,178 @@
+Bloqueio de edição de desconto lançado ao isentar unidade
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono um item para isenção
+E informo o valor percentual de isenção
+E clico no botão Lançar Desconto
+E devo abrir a tela de Novo de Desconto
+Quando tento editar o desconto lançado
+Então os campos de Condomínio, Conta de Desconto, Valor do Desconto, Unidade, Incluir rateio na fatura de e Rateio estão bloqueados para edição
+
+Isentar fatura de unidade - Lançar desconto
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono um item para isenção
+E informo o valor percentual de isenção
+E clico no botão Lançar Desconto
+E deve abrir a tela de Novo de Desconto
+Quando clico no botão Salvar
+Então o desconto é lançado corretamente na isenção da fatura da unidade
+
+Isentar fatura de unidade - Editar valor do desconto
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono um item para isenção
+E informo o valor percentual de isenção
+E clico no botão Lançar Desconto
+E deve abrir a tela de Novo de Desconto
+E tento editar o valor do desconto lançado
+Então o campo Valor está bloqueado para edição
+
+Isentar fatura de unidade - Editar unidade
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono um item para isenção
+E informo o valor percentual de isenção
+E clico no botão Lançar Desconto
+E deve abrir a tela de Novo de Desconto
+E tento editar a unidade do desconto lançado
+Então o campo Unidade está bloqueado para edição
+
+Isentar fatura de unidade - Editar Rateio
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono um item para isenção
+E informo o valor percentual de isenção
+E clico no botão Lançar Desconto
+E deve abrir a tela de Novo de Desconto
+E tento editar o rateio do desconto lançado
+Então o campo Rateio está bloqueado para edição com a opção de Aplicar a uma ou mais unidades
+
+Isentar fatura de unidade - Editar condomínio
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono um item para isenção
+E informo o valor percentual de isenção
+E clico no botão Lançar Desconto
+E deve abrir a tela de Novo de Desconto
+E tento editar o condomínio do desconto lançado
+Então o campo Condomínio está bloqueado para edição
+
+
+Isentar fatura de unidade - Desconto para mais de um item
+Pré-requisitos:
+- Unidade deve possuir faturas com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui faturas com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono mais de um item para isenção
+E informo o valor percentual de isenção iguais para cada item
+E clico no botão Lançar Desconto
+E devo abrir a tela de Novo de Desconto
+E clico no botão Salvar
+Então o desconto é lançado com sucesso para todos os itens selecionados na isenção da fatura da unidade
+
+Isentar fatura de unidade - Desconto para item com valor zero
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono um item para isenção
+E informo o valor percentual de isenção que resulte em valor zero
+E clico no botão Lançar Desconto
+Então uma mensagem de erro é exibida informando que não é possível lançar desconto com valor zero
+
+Isentar fatura de unidade - Desconto para itens com valores diferentes
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono mais de um item para isenção
+E informo valores percentuais de isenção diferentes para cada item
+E clico no botão Lançar Desconto
+E devo abrir a tela de Novo de Desconto
+E clico no botão Salvar
+Então o desconto é lançado com sucesso para todos os itens selecionados na isenção da fatura da unidade, com os valores correspondentes a cada item
+
+Isentar fatura de unidade - Isenção de todos os itens
+Pré-requisitos:
+- Unidade deve possuir fatura com status Falta Fechamento
+
+Dado que estou na tela de isenção de unidade
+E a unidade possui fatura com status Falta Fechamento
+E seleciono a Fatura
+E clico no botão Ações
+E clico em Isentar
+E devo abrir a tela de Isenção de Itens da Fatura
+E na seção Itens para aplicar isenção
+Seleciono todos os itens para isenção
+E informo o valor percentual de isenção
+E clico no botão Lançar Desconto
+E devo abrir a tela de Novo de Desconto
+E clico no botão Salvar
+Então o desconto é lançado com sucesso para todos os itens da isenção da fatura da unidade
