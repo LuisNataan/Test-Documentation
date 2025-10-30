@@ -1,0 +1,95 @@
+Aplicar correção manualmente nos contratos do Financizze
+Pré-requisitos:
+- Contrato deve estar ativo no Financizze
+- Ter acesso ao módulo de Cadastros no Financizze
+- Ter permissão para acessar e editar contratos
+
+Dado que estou logado no Financizze com um usuário que possui permissão para editar contratos
+E clico no botão Cadastros
+E clico na opção Contratos
+E estou na tela de Contratos
+E seleciono um contrato ativo da lista
+E clico no botão Aplicar correção
+E devo abrir modal "Aplicar correção?"
+E informo o valor percentual da correção monetária
+E informo Senha
+E clico no botão Confirmar
+Então a correção monetária deve ser aplicada ao contrato selecionado
+
+Aplicar correção manualmente com valor decimal
+Pré-requisitos:
+- Contrato deve estar ativo no Financizze
+
+Dado que estou logado no Financizze com um usuário que possui permissão para editar contratos
+E clico no botão Cadastros
+E clico na opção Contratos
+E estou na tela de Contratos
+E seleciono um contrato ativo da lista
+E clico no botão Aplicar correção
+E devo abrir modal "Aplicar correção?"
+E informo o valor percentual da correção monetária com valor decimal (ex: 2,5%)
+E informo Senha
+E clico no botão Confirmar
+Então a correção monetária deve ser aplicada ao contrato selecionado com o valor decimal informado
+
+Aplicar correção manualmente sem informar senha
+Pré-requisitos:
+- Contrato deve estar ativo no Financizze
+Dado que estou logado no Financizze com um usuário que possui permissão para editar contratos
+E clico no botão Cadastros
+E clico na opção Contratos
+E estou na tela de Contratos
+E seleciono um contrato ativo da lista
+E clico no botão Aplicar correção
+E devo abrir modal "Aplicar correção?"
+E informo o valor percentual da correção monetária
+E clico no botão Confirmar
+Então deve exibir mensagem exigindo a senha para aplicar a correção monetária
+
+Aplicar correção manualmente com valor inválido
+Pré-requisitos:
+- Contrato deve estar ativo no Financizze
+Dado que estou logado no Financizze com um usuário que possui permissão para editar contratos
+E clico no botão Cadastros
+E clico na opção Contratos
+E estou na tela de Contratos
+E seleciono um contrato ativo da lista
+E clico no botão Aplicar correção
+E devo abrir modal "Aplicar correção?"
+E informo o valor percentual da correção monetária com valor inválido
+E informo Senha
+E clico no botão Confirmar
+Então deve exibir mensagem de erro informando que o valor percentual é inválido
+
+Aplicar correção manualmente com valor negativo
+
+Pré-requisitos:
+- Contrato deve estar ativo no Financizze
+Dado que estou logado no Financizze com um usuário que possui permissão para editar
+contratos
+E clico no botão Cadastros
+E clico na opção Contratos
+E estou na tela de Contratos
+E seleciono um contrato ativo da lista
+E clico no botão Aplicar correção
+E devo abrir modal "Aplicar correção?"
+E informo o valor percentual da correção monetária com valor negativo
+E informo Senha
+E clico no botão Confirmar
+Então deve aplicar a correção monetária negativa ao contrato selecionado, reduzindo o valor conforme o percentual informado
+
+Aplicar correção manualmente com valor 100% de correção
+Pré-requisitos:
+- Contrato deve estar ativo no Financizze
+Dado que estou logado no Financizze com um usuário que possui permissão para editar
+contratos
+E clico no botão Cadastros
+E clico na opção Contratos
+E estou na tela de Contratos
+E seleciono um contrato ativo da lista
+E clico no botão Aplicar correção
+E devo abrir modal "Aplicar correção?"
+E informo o valor percentual da correção monetária como 100%
+E informo Senha
+E clico no botão Confirmar
+Então deve aplicar a correção monetária de 100% ao contrato selecionado
