@@ -1,0 +1,31 @@
+Alterando tarifa por m³ de gás
+Pré-requisitos:
+- Condomínio deve ter leitura de gás cadastrada
+- Deve existir uma tarifa por m³ de gás cadastrada
+- Deve estar habilitados os relógios de gás para as unidades
+- Deve existir leitura de gás anterior cadastrada
+
+Dado que estou na tela de Leituras de Relógios
+E seleciono um condomínio
+E informo o mês de competência da leitura
+E informo Data da leitura
+E informo o valor da leitura de gás para uma unidade
+Quando altero a tarifa por m³ de gás
+E salvo a leitura
+Então o sistema deve recalcular o valor da leitura de gás para a unidade com base na nova tarifa cadastrada
+
+Alterando tarifa por m³ de gás - Valor alterado após salvar leitura
+Pré-requisitos:
+- Condomínio deve ter leitura de gás cadastrada
+- Deve existir uma tarifa por m³ de gás cadastrada
+- Deve estar habilitados os relógios de gás para as unidades
+- Deve existir leitura de gás anterior cadastrada
+
+Dado que estou na tela de Leituras de Relógios
+E seleciono um condomínio
+E informo o mês de competência da leitura
+E informo Data da leitura
+E informo o valor da leitura de gás para uma unidade
+E altero a tarifa por m³ de gás
+Quando salvo a leitura
+Então o valor da tarifa deve permanecer o mesmo
