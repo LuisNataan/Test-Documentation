@@ -1,0 +1,43 @@
+Reserva de área comum com opção de cobrança no mês de competência seguinte
+
+Pré-requisitos:
+- Condomínio deve ter área comum cadastrada
+- Área comum deve estar com a opção Sim no campo "É Necessário Agendamento?"
+- Deve estar com a opção Sim no campo "Tem taxa de uso?"
+- Deve estar configurado um valor no campo Custo da reserva
+- Deve estar com a  opção Sim no campo "É necessário aprovação?"
+- Fatura do mês da reserva deve estar fechada
+
+Dado que estou na tela inicial do sistema
+Clico no menu Áreas comuns
+E seleciono Área Comum
+E seleciono uma data para reserva
+E clico no botão Reservar
+E seleciono o horário disponível
+E informo motivo
+E clico no botão Salvar
+E aguardo a aprovação do administrador
+Quando acesso as faturas do mês seguinte
+Então deve gerar fatura referente à reserva realizada na área comum no mês anterior
+
+Reserva de área comum com opção de cobrança no mês de competência seguinte - Alternativa
+Pré-requisitos:
+- Condomínio deve ter área comum cadastrada
+- Área comum deve estar com a opção Sim no campo "É Necessário Agendamento?"
+- Deve estar com a opção Sim no campo "Tem taxa de uso?"
+- Deve estar configurado um valor no campo Custo da reserva
+- Deve estar com a  opção Sim no campo "É necessário aprovação?"
+- Fatura do mês da reserva deve estar fechada
+- Fatura do mês seguinte deve estar fechada
+
+Dado que estou na tela inicial do sistema
+Clico no menu Áreas comuns
+E seleciono Área Comum
+E seleciono uma data para reserva
+E clico no botão Reservar
+E seleciono o horário disponível
+E informo motivo
+E clico no botão Salvar
+E aguardo a aprovação do administrador
+Quando acesso as faturas do mês seguinte
+Então deve gerar fatura referente à reserva realizada na área comum para dois meses depois (Ex: reserva em Janeiro, fatura em Março)
