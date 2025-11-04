@@ -41,3 +41,68 @@ E clico no botão Salvar
 E aguardo a aprovação do administrador
 Quando acesso as faturas do mês seguinte
 Então deve gerar fatura referente à reserva realizada na área comum para dois meses depois (Ex: reserva em Janeiro, fatura em Março)
+
+Reserva de área comum sem opção de cobrança no mês de competência seguinte
+Pré-requisitos:
+- Condomínio deve ter área comum cadastrada
+- Área comum deve estar com a opção Sim no campo "É Necessário Agendamento?"
+- Deve estar com a opção Sim no campo "Tem taxa de uso?"
+- Deve estar configurado um valor no campo Custo da reserva
+- Deve estar com a  opção Sim no campo "É necesario aprovação?"
+- Fatura do mês da reserva deve estar fechada
+
+Dado que estou na tela inicial do sistema
+Clico no menu Áreas comuns
+E seleciono Área Comum
+E seleciono uma data para reserva
+E clico no botão Reservar
+E seleciono o horário disponível
+E informo motivo
+E clico no botão Salvar
+E aguardo a aprovação do administrador
+Quando acesso as faturas do mês seguinte
+Então não deve gerar fatura referente à reserva realizada na área comum no mês seguinte
+
+Reserva de área comum mais de uma reserva no mesmo mês
+Pré-requisitos:
+- Condomínio deve ter área comum cadastrada
+- Área comum deve estar com a opção Sim no campo "É Necessário Agendamento?"
+- Deve estar com a opção Sim no campo "Tem taxa de uso?"
+- Deve estar configurado um valor no campo Custo da reserva
+- Deve estar com a  opção Sim no campo "É necesario aprovação?"
+- Fatura do mês da reserva deve estar fechada
+
+Dado que estou na tela inicial do sistema
+Clico no menu Áreas comuns
+E seleciono Área Comum
+E seleciono uma data para reserva
+E clico no botão Reservar
+E seleciono o horário disponível
+E informo motivo
+E clico no botão Salvar
+E aguardo a aprovação do administrador
+E repito o processo de reserva para uma nova data no mesmo mês
+Quando acesso as faturas do mês seguinte
+Então deve gerar uma única fatura referente às reservas realizadas na área comum no mês anterior, com o valor total das reservas, no mês seguinte
+
+Cancelamento de reserva de área comum com cobrança no mês de competência seguinte
+Pré-requisitos:
+- Condomínio deve ter área comum cadastrada
+- Área comum deve estar com a opção Sim no campo "É Necessário Agendamento?"
+- Deve estar com a opção Sim no campo "Tem taxa de uso?"
+- Deve estar configurado um valor no campo Custo da reserva
+- Deve estar com a  opção Sim no campo "É necesario aprovação?"
+- Fatura do mês da reserva deve estar fechada
+- Reserva deve ter sido aprovada
+- Fatura do mês seguinte deve estar fechada
+
+Dado que estou na tela inicial do sistema
+Clico no menu Áreas comuns
+E seleciono Área Comum
+E localizo a reserva aprovada
+E clico no botão Cancelar reserva
+E informo o motivo do cancelamento
+E clico no botão Confirmar
+Quando acesso as faturas do mês seguinte
+Então fatura referente à reserva realizada na área comum deve ser estornada ou removida
+
