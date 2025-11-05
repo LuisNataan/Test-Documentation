@@ -1,0 +1,31 @@
+Gerar relatório de lançamentos financeiros
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Lançamentos
+
+Dado que estou na tela de Relatórios de Lançamentos Financeiros
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E seleciono Mês de Competência
+E seleciono Tipo de Rateio Com Rateio
+E clico no botão Gerar
+Quando o sistema gera o relatório de lançamentos financeiros
+E o relatório deve exibir todos os lançamentos financeiros do condomínio no período selecionado com rateio
+Então o relatório deve conter colunas para Data, Tipo, Lançamento, Unidade, Valor, Sobras de Rateio e Fundo de Reserva
+
+Gerar relatório de lançamentos financeiros sem rateio
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Lançamentos
+
+Dado que estou na tela de Relatórios de Lançamentos Financeiros
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E seleciono Mês de Competência
+E seleciono Tipo de Rateio Sem Rateio
+E clico no botão Gerar
+Quando o sistema gera o relatório de lançamentos financeiros
+E o relatório deve exibir todos os lançamentos financeiros do condomínio no período selecionado sem rateio
+Então o relatório deve conter colunas para Data, Tipo, Lançamento, Unidade e Valor
