@@ -1,0 +1,97 @@
+Selecionar parcelas do contas a pagar para cancelar
+
+Pré-requisitos:
+- Deve haver parcelas criadas no Contas a Pagar.
+- Contas devem estar com status "Em Aberto".
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+E seleciono múltiplas parcelas
+Quando clico no botão Cancelar Selecionadas
+E devo abrir modal de confirmação
+E informo Senha
+E clico no botão Confirmar
+Então as parcelas selecionadas devem ser canceladas
+
+Selecionar todas as parcelas do contas a pagar para cancelar
+
+Pré-requisitos:
+- Deve haver parcelas criadas no Contas a Pagar.
+- Contas podem estar com status "Em Aberto" e "Pago".
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+E clico na opção Selecionar Todas
+Quando clico no botão Cancelar Selecionadas
+E devo abrir modal de confirmação
+E informo Senha
+E clico no botão Confirmar
+Então todas as parcelas devem ser canceladas
+
+Nenhuma parcela selecionada para cancelar
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+Quando clico no botão Cancelar Selecionadas
+Então devo visualizar uma mensagem de erro "Nenhuma conta a pagar pode ser cancelada."
+
+Cancelar parcelas do contas a pagar que estão pagas
+
+Pré-requisitos:
+- Deve haver parcelas criadas no Contas a Pagar.
+- Contas devem estar com status "Pago".
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+E seleciono múltiplas parcelas já pagas
+Quando clico no botão Cancelar Selecionadas
+Então devo mostrar mensagem de erro "Parcelas pagas não podem ser canceladas."
+
+Cancelar parcelas do contas a pagar com status "Em Aberto" e "Pago"
+
+Pré-requisitos:
+- Deve haver parcelas criadas no Contas a Pagar.
+- Contas devem estar com status "Em Aberto" e "Pago".
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+E seleciono múltiplas parcelas com status "Em Aberto" e "Pago"
+Quando clico no botão Cancelar Selecionadas
+Então devo mostrar mensagem informando o número de parcelas canceladas sendo somente as parcelas com status "Em Aberto".
+
+Confirmar cancelamento das parcelas com senha correta
+
+Pré-requisitos:
+- Deve haver parcelas criadas no Contas a Pagar.
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+E seleciono múltiplas parcelas
+Quando clico no botão Cancelar Selecionadas
+E devo abrir modal de confirmação
+E informo Senha
+E clico no botão Confirmar
+Então as parcelas selecionadas devem ser canceladas
+
+Confirmar cancelamento das parcelas com senha incorreta
+
+Pré-requisitos:
+- Deve haver parcelas criadas no Contas a Pagar.
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+Dado que estou na tela de Parcelas Contas a Pagar
+E seleciono múltiplas parcelas
+Quando clico no botão Cancelar Selecionadas
+E devo abrir modal de confirmação
+E informo Senha incorreta
+E clico no botão Confirmar
+Devo mostrar mensagem de erro "Não foi possível cancelar a(s) conta(s) a pagar. Tente novamente ou contate o suporte."
+Então as parcelas selecionadas não devem ser canceladas
