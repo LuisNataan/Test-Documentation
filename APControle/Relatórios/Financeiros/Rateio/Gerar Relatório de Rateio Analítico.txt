@@ -1,0 +1,14 @@
+Gerar Relatório de Rateio Analítico
+
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio
+
+Dado que estou na tela de Relatórios de Rateio Analítico
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E clico no botão Gerar
+Quando o sistema gera o relatório de rateio
+E o relatório deve exibir o rateio analítico do condomínio no período selecionado
+Então o relatório deve conter colunas para Unidade, Inquilino/Proprietário, Taxa de Condomínio, Fundo de Reserva, Descontos, Leituras, Investimentos e Valor Total
