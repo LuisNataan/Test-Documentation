@@ -1,0 +1,15 @@
+[BUG]Erro ao cancelar boleto unificado de acordo
+Pré-requisitos:
+ - Deve haver um acordo cadastrado
+ - Acordo deve estar com status "Aprovado"
+ - Boletos devem estar unificados em acordo
+
+Dado que estou na tela de acordos
+E seleciono um condomínio
+E seleciono um acordo
+E clico no botão Ações
+E clico no botão Visualizar
+E seleciono boletos
+E clico no botão Reabrir
+E devo mostrar mensagem de erro "Houve um erro no processamento da sua requisição. Favor entre em contato com o suporte."
+Então os boletos não são cancelados

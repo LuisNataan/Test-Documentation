@@ -1,0 +1,14 @@
+Cancelamento de boletos de acordo
+Pré-requisitos:
+ - Deve haver um acordo cadastrado
+ - Acordo deve estar com status "Aprovado"
+ - Boletos devem estar unificados em acordo
+
+Dado que estou na tela de acordos
+E seleciono um condomínio
+E seleciono um acordo
+E clico no botão Ações
+E clico no botão Visualizar
+E seleciono boletos
+E clico no botão Reabrir
+Então os boletos devem ser cancelados
