@@ -1,0 +1,127 @@
+Exibir e-mail do criador do conta a pagar ao visualizar
+
+Pré-requisitos:
+Deve possuir usuário com permissões para cadastrar e visualizar contas a pagar
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Quando acesso a tela de Visualizar Conta a Pagar
+Então deve ser exibido o e-mail do criador da conta a pagar
+
+Criar conta a pagar - Visualizar email do usuário
+Pré-requisitos:
+ - Acessar tela de contas a pagar. Lançamentos -> Contas a pagar
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Novo Registro com o mouse
+E seleciono um condominio
+E adiciono Descrição
+E informo Conta do ativo ou despesa
+E informo Conta passivo
+E informo Fornecedor
+E informo Data Lançamento
+E informo Valor
+E informo Data Vencimento da primeira parcela
+E informo Número de Parcelas
+E seleciono forma de Rateio
+E informo Forma de Divisão
+E clico em Salvar
+Quando acesso a tela de Visualizar Conta a Pagar
+Então deve ser exibido o e-mail do criador da conta a pagar
+
+Editar conta a pagar - Visualizar email do usuário
+Pré-requisitos:
+ - Acessar tela de contas a pagar. Lançamentos -> Contas a pagar
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar
+E clico no botão Ações com o mouse
+E clico no botão Editar
+Quando acesso a tela de Editar Conta a Pagar
+E altero o valor da conta a pagar
+E clico no botão Salvar
+Quando acesso a lista de contas a pagar
+E seleciono a conta a pagar que acabei de editar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Então deve ser exibido o e-mail de quem alterou a conta a pagar
+
+Criar e editar contas a pagar - Usuários diferentes
+
+Dado que estou na tela de Contas a Pagar
+E clico no botão Novo Registro com o mouse
+E seleciono um condominio
+E adiciono Descrição
+E informo Conta do ativo ou despesa
+E informo Conta passivo
+E informo Fornecedor
+E informo Data Lançamento
+E informo Valor
+E informo Data Vencimento da primeira parcela
+E informo Número de Parcelas
+E seleciono forma de Rateio
+E informo Forma de Divisão
+E clico em Salvar
+Quando acesso a tela de Visualizar Conta a Pagar
+Deve ser exibido o e-mail do criador da conta a pagar
+Quando faço login com um usuário diferente
+E acesso a tela de Contas a Pagar
+E seleciono a conta a pagar que acabei de criar
+E clico no botão Ações com o mouse
+E clico no botão Editar
+Quando acesso a tela de Editar Conta a Pagar
+E altero o valor de Parcelas
+E clico no botão Salvar
+Quando acesso a lista de contas a pagar
+E seleciono a conta a pagar que acabei de editar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Então deve ser exibido o e-mail de quem criou e alterou a conta a pagar
+
+Visualizar conta a pagar - Conta Paga
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Quando acesso a tela de Visualizar Conta a Pagar
+Então deve ser exibido o e-mail do criador da conta a pagar
+
+Visualizar conta a pagar com parcelas canceladas
+Pré-requisitos:
+ - Acessar tela de contas a pagar. Lançamentos -> Contas a pagar
+ - Conta a pagar deve possuir parcelas
+ - Alguns registros de parcelas devem estar canceladas
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Quando acesso a tela de Visualizar Conta a Pagar
+Então deve ser exibido o e-mail do criador e de quem alterou a conta a pagar
+
+Visualizar conta a pagar - Conta criada por usuário inativo
+Pré-requisitos:
+ - Acessar tela de contas a pagar. Lançamentos -> Contas a pagar
+ - A conta deve ser criada por um usuário que foi inativado no backend
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Quando acesso a tela de Visualizar Conta a Pagar
+Então deve ser exibido o e-mail do criador da conta a pagar
+
+Visualizar conta a pagar sem dados de criação - Registros antigos
+Pré-requisitos:
+ - Acessar tela de contas a pagar. Lançamentos -> Contas a pagar
+ - A conta deve ter sido criada anterior a implementação (07/11/25)
+
+Dado que estou na tela de Contas a Pagar
+E seleciono uma conta a pagar
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Quando acesso a tela de Visualizar Conta a Pagar
+Então não deve exibir o e-mail do criador da conta a pagar nem alteração
