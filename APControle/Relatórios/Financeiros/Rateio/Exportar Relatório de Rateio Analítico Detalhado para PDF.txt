@@ -1,0 +1,119 @@
+Exportar relatório de rateio analítico detalhado para PDF
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o relatório deve ser exportado para o formato PDF
+
+Exportar relatório de rateio analítico detalhado para PDF - Sem dados
+Pré-requisitos:
+- No período selecionado não deve existir lançamentos
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o relatório deve ser gerado sem dados
+
+Exportar relatório de rateio analítico detalhado para PDF - Período de um mês
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período de um mês definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período de um mês desejado para o relatório (Ex.: Janeiro de 2023)
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o relatório deve ser exportado para o formato PDF
+
+Exportar relatório de rateio analítico detalhado para PDF - Período de vários meses
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período de vários meses definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período de vários meses desejado para o relatório (Ex.: Janeiro de 2023 a Dezembro de 2023)
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o relatório deve ser exportado para o formato PDF
+
+Exportar relatório de rateio analítico detalhado para PDF - Nome sendo gerado corretamente
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o nome do arquivo deve ser gerado corretamente (Ex.: relatorio_rateio_analitico_detalhado_2023_01.pdf)
+
+Exportar relatório de rateio analítico detalhado para PDF - Gerar para PDF e Excel
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+E clico no botão Exportar para Excel
+Então o relatório deve ser exportado para o formato PDF e Excel corretamente
+
+Exportar relatório de rateio analítico detalhado para PDF - Filtro Exibir Detalhes ativo
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E habilito a checkbox do filtro Exibir Detalhes
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o relatório deve ser exportado para o formato PDF com os detalhes dos lançamentos financeiros
+
+Exportar relatório de rateio analítico detalhado para PDF - Filtro Exibir cobrança extra
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono o período desejado para o relatório
+E habilito a checkbox do filtro Exibir cobrança extra
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o relatório deve ser exportado para o formato PDF com os detalhes das cobranças extra
+
+Exportar relatório de rateio analítico detalhado para PDF - Exibir relatório por unidade
+Pré-requisitos:
+- Deve existir lançamentos financeiros cadastrados no sistema
+- Deve existir um período definido para o relatório
+- Acessar Relatórios -> Financeiros -> Rateio -> Rateio Analítico Detalhado
+
+Dado que estou na tela de Relatórios de Rateio Analítico Detalhado
+E seleciono um condomínio
+E seleciono uma  unidade
+E seleciono o período desejado para o relatório
+E clico no botão Exportar para PDF
+Quando o sistema exporta o relatório de rateio detalhado para PDF
+Então o relatório deve ser exportado para o formato PDF com as informações da unidade selecionada
