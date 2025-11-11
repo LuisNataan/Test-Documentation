@@ -1,0 +1,81 @@
+Configuração de demonstrativo de rateio - Checkbox aparecendo
+Pré-requisitos:
+- Acessar Configurações -> Boletos -> Demonstrativo
+
+Dado que estou na tela de configurações de boletos
+E seleciono um condomínio
+E clico no botão Ações
+E clico em Editar
+E deve abrir a tela de configurações de demonstrativo do boleto
+E acesso seção Demonstrativo de Rateio
+Então a checkbox "Exibir nome da conta ao invés da descrição do lançamento" deve aparecer
+
+Persistência de configurações de demonstrativo de rateio
+Pré-requisitos:
+- Acessar Configurações -> Boletos -> Demonstrativo
+- Ativar a checkbox "Exibir nome da conta ao invés da descrição do lançamento"
+
+Dado que estou na tela de configurações de boletos
+E seleciono um condomínio
+E clico no botão Ações
+E clico em Editar
+E deve abrir a tela de configurações de demonstrativo do boleto
+E acesso seção Demonstrativo de Rateio
+Então a checkbox "Exibir nome da conta ao invés da descrição do lançamento" deve estar ativa
+
+Boletos Unificados com checkboxes ativas
+Pré-requisitos:
+- Deve possuir boletos unificados
+- Checkbox "Exibir itens das faturas no demonstrativo de boletos unificados" deve estar ativa
+- Checkbox "Separar o demonstrativo dos boletos unificados" deve estar ativa
+- Checkbox "Exibir nome da conta ao invés da descrição do lançamento" deve estar ativa
+- Modelo de demonstrativo deve ser "Demonstrativo de rateio com grupo"
+
+Dado que estou na tela de boletos
+E seleciono um condomínio
+E seleciono um boleto unificado
+E clico no botão Ações
+E clico no botão Visualizar
+Quando é gerado o boleto
+Lançamentos estão apenas com os nomes das contas sem descrição
+Então é exibida a divisão das faturas do boleto
+
+Agrupamento de lançamentos da mesma conta
+Pré-requisitos:
+- Checkbox "Exibir nome da conta ao invés da descrição do lançamento" deve estar ativa
+- Deve possuir dois lançamentos da mesma conta (Ex.: Água e Esgoto)
+
+Dado que estou na tela de boletos
+E seleciono um condomínio
+E seleciono um boleto
+E clico no botão Ações
+E clico no botão Visualizar
+Quando é gerado o boleto
+E ambos lançamentos são agrupados em um único item
+E o nome exibido é o da conta
+E o valor exibido é a soma dos dois lançamentos
+Então o total do demonstrativo é igual ao total do boleto
+
+Agrupamento sem lançamentos da mesma conta
+Pré-requisitos:
+- Checkbox "Exibir nome da conta ao invés da descrição do lançamento" deve estar ativa
+- Boleto unificado deve ser gerado
+Dado que estou na tela de boletos
+E seleciono um condomínio
+E seleciono um boleto
+E clico no botão Ações
+E clico no botão Visualizar
+E os lançamentos são de contas diferentes
+E nenhum agrupamento é realizado nos lançamentos
+Então ocorre apenas a substituição da descrição pelo nome da conta
+
+Validação de calculo de boleto
+Pré-requisitos:
+- Checkbox "Exibir nome da conta ao invés da descrição do lançamento" deve estar ativa
+
+Dado que estou na tela de boletos
+E seleciono um condomínio
+E seleciono um boleto
+E clico no botão Ações
+E clico no botão Visualizar
+Então o valor total do boleto deve ser igual ao somatório dos lançamentos
