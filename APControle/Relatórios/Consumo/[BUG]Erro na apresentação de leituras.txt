@@ -1,0 +1,11 @@
+[BUG]Erro na apresentação de leituras
+Pré-requisitos:
+- Devem estar lançadas leituras de água no mês de competência e no mês anterior
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então relatório mostra os dados de consumo do mês anterior sendo o mesmo da leitura atual

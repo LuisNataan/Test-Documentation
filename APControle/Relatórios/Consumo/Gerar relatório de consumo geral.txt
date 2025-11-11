@@ -1,0 +1,87 @@
+Gerar relatório de consumo geral
+Pré-requisitos:
+- Devem estar lançadas leituras de água no mês de competência e no mês anterior
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então relatório mostra os dados de consumo do mês anterior e leitura atual
+
+Gerar relatório de consumo geral - Sem leituras
+Pré-requisitos:
+- Não devem estar lançadas leituras de água no mês de competência e no mês anterior
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então relatório não mostra nenhum dado
+
+Gerar relatório de consumo geral - Sem leituras no mês de competência
+Pré-requisitos:
+- Não devem estar lançadas leituras no mês de competência
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então relatório mostra os dados de consumo do mês anterior
+
+Gerar relatório de consumo geral - Checkbox "Exibir Detalhes" ativa
+Pré-requisitos:
+- Devem estar lançadas leituras de água no mês de competência e no mês anterior
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+- Clicar no checkbox "Exibir Detalhes"
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então é exibido relatório com os detalhes de data de leitura, data de criação, responsável e usuário da leitura
+
+Gerar relatório de consumo geral - Checkbox "Exibir nome do proprietário" ativo
+Pré-requisitos:
+- Devem estar lançadas leituras de água no mês de competência e no mês anterior
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+- Clicar no checkbox "Exibir nome do proprietário"
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então é exibido relatório com o nome do proprietário
+
+Gerar relatório de consumo geral - Relatório por bloco
+Pré-requisitos:
+- Devem estar lançadas leituras de água no mês de competência e no mês anterior
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E seleciono Bloco
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então relatório mostra os dados de consumo do mês anterior e leitura atual de todas as unidades do bloco
+
+Gerar relatório de consumo geral - Selecionar tipo de tabela
+Pré-requisitos:
+- Devem estar lançadas leituras de água no mês de competência e no mês anterior
+- Acessar relatório de Consumo. Relatórios -> Consumo -> Consumo (Geral)
+
+Dado que estou na tela de Relatórios de Consumo
+E seleciono um condomínio
+E seleciono Mês de Competência
+E seleciono Tipo de Tabela (Ex.: Tabela Secundária)
+E clico no botão Gerar
+Quando o sistema gera o relatório de consumo
+Então relatório mostra os dados de consumo do mês anterior e leitura atual de todas as unidades pela tabela selecionada
