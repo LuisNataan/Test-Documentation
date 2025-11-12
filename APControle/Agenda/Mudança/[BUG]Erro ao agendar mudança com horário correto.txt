@@ -1,0 +1,21 @@
+[BUG]Erro ao agendar mudança com horário correto
+Pré-requisitos:
+- Deve estar configurada a mudança com um período de horário válido
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Agendamentos"
+E deve abrir tela Agendar mudança
+E clico em Novo Registro com o mouse
+E devo abrir tela Agendar mudança
+E seleciono um Condomínio
+E seleciono Unidade
+E seleciono Data
+E seleciono Tipo de mudança
+E informo horário de início "10:00"
+E informo horário de término "12:00"
+E seleciono Tipo de mudança "Saída"
+E informo Responsável pela mudança
+E informo Observação
+E clico em Salvar
+Então deve mostrar mensgem de erro "O intervalo de horário selecionado não está dentro dos horários permitidos."
