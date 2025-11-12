@@ -1,0 +1,87 @@
+Permitir selecionar dia de vencimento da primeira parcela de acordo
+Pré-requisitos:
+ - Acessar tela de Cobranças -> Acordos
+ - Deve possuir faturas com Status Pendente/Vencida
+
+Dado que estou na tela de Acordos
+E clico no botão no botão Novo Acordo
+Dado que estou na tela de Simulação de acordo
+E seleciono um Condomínio
+E seleciono uma Unidade
+E clico no botão Filtrar
+E devo mostrar as faturas para simulação
+E seleciono faturas
+E seleciono o dia de vencimento da primeira parcela (Ex.:11/11/25)
+E informo o valor da primeira parcela (Ex.: 100,00)
+E informo quantidade de parcelas (Ex.: 3)
+E clico no botão Editar parcelas
+E devo mostrar as parcelas
+Então deve ser permitido alterar o dia de vencimento da primeira parcela sem alterar as outras parcelas
+
+Editar dia de vencimento da primeira parcela de acordo
+Pré-requisitos:
+ - Acessar tela de Cobranças -> Acordos
+ - Deve possuir um acordo cadastrado
+ - Acordo deve estar com status "Simulação"
+
+Dado que estou na tela de Acordos
+E seleciono um Acordo
+E clico no botão Ações
+E clico no botão Editar
+E seleciono o dia de vencimento da primeira parcela (Ex.:25/12/25)
+Então a data de vencimento da primeira parcela deve ser alterada
+
+Editar parcelas de acordo
+Pré-requisitos:
+ - Acessar tela de Cobranças -> Acordos
+ - Deve possuir um acordo cadastrado
+ - Acordo deve estar com status "Simulação"
+
+Dado que estou na tela de Acordos
+E seleciono um Acordo
+E clico no botão Ações
+E clico no botão Editar
+E seleciono o dia de vencimento da primeira parcela (Ex.:25/12/25)
+E informo o valor da primeira parcela (Ex.: 100,00)
+E informo quantidade de parcelas (Ex.: 5)
+E clico no botão Editar parcelas
+Então as parcelas devem ser alteradas
+
+Editar parcelas de acordo sem alterar o dia de vencimento da primeira parcela
+Pré-requisitos:
+ - Acessar tela de Cobranças -> Acordos
+ - Deve possuir um acordo cadastrado
+ - Acordo deve estar com status "Simulação"
+
+Dado que estou na tela de Acordos
+E seleciono um Acordo
+E clico no botão Ações
+E clico no botão Editar
+E altero o dia de vencimento de todas as outras parcelas com exceção da primeira parcela
+Então as parcelas devem ser alteradas
+
+Data de vencimento da primeira parcela inválida
+Pré-requisitos:
+ - Acessar tela de Cobranças -> Acordos
+ - Deve possuir um acordo cadastrado
+ - Acordo deve estar com status "Simulação"
+
+Dado que estou na tela de Acordos
+E seleciono um Acordo
+E clico no botão Ações
+E clico no botão Editar
+E informo o dia de vencimento da primeira parcela como 33/12/25
+Então é mostrado o último dia do mês selecionado
+
+Data de vencimento da primeira parcela antes da data atual
+Pré-requisitos:
+ - Acessar tela de Cobranças -> Acordos
+ - Deve possuir um acordo cadastrado
+ - Acordo deve estar com status "Simulação"
+
+Dado que estou na tela de Acordos
+E seleciono um Acordo
+E clico no botão Ações
+E clico no botão Editar
+E informo o dia de vencimento da parcela sendo menor que a data atual
+Então devo mostrar uma mensagem de erro: "O vencimento deve ser igual ou superior ao dia atual."
