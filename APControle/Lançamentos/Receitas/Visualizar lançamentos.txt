@@ -1,0 +1,24 @@
+Visualizar lançamentos
+Pré-requisitos:
+ - Acessar tela de receitas. Lançamentos -> Ver Lançamentos
+ - Devem ter lançamentos cadastrados no sistema
+
+Dado que estou na tela de Receitas
+E seleciono um lançamento
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Quando acesso a tela de Visualizar Lançamento
+Então deve ser exibido os detalhes do lançamento selecionado
+
+Visualizar lançamento com rateio
+Pré-requisitos:
+ - Acessar tela de receitas. Lançamentos -> Ver Lançamentos
+ - Devem ter lançamentos cadastrados no sistema
+ - Lançamentos devem ter rateio
+
+Dado que estou na tela de Receitas
+E seleciono um lançamento com rateio
+E clico no botão Ações com o mouse
+E clico no botão Visualizar
+Quando acesso a tela de Visualizar Lançamento
+Então deve ser exibido os detalhes do lançamento selecionado com rateio

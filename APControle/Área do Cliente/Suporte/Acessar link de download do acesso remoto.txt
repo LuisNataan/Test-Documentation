@@ -1,0 +1,31 @@
+Acessar tela de Suporte
+Pré-requisitos:
+ - Acessar tela de Suporte. Central do Cliente -> Suporte
+
+Dado que estou na tela de Suporte
+Então deve mostrar as seções de Chat, Email, Telefone, FAQ, Acesso Remoto e Sugestões
+
+Verificar seção de acesso remoto na tela de Suporte
+Pré-requisitos:
+ - Acessar tela de Suporte. Central do Cliente -> Suporte
+
+Dado que estou na tela de Suporte
+Então deve mostrar a seção Acesso Remoto
+
+Acessar link de download do acesso remoto para Windows
+Pré-requisitos:
+ - Acessar tela de Suporte. Central do Cliente -> Suporte
+
+Dado que estou na tela de Suporte
+E devo mostrar a seção Acesso Remoto
+E clico no botão Download para Windows
+Então devo ser redirecionado para o link de download do acesso remoto
+
+Acessar link de download do acesso remoto para MacOS
+Pré-requisitos:
+ - Acessar tela de Suporte. Central do Cliente -> Suporte
+
+Dado que estou na tela de Suporte
+E devo mostrar a seção Acesso Remoto
+E clico no botão Download para MacOS
+Então devo ser redirecionado para o link de download do acesso remoto
