@@ -1,0 +1,10 @@
+[BUG]Erro 500 ao visualizar configuração de agendamento
+Pré-requisitos:
+- Deve estar configurado o agendamento de mudanças
+
+Dado que estou na tela inicial do sistema
+E abro aba "Agenda"
+E clico em "Configurações de mudanças"
+E seleciono uma configuração
+E clico no botão Visualizar
+Então devo ver a mensagem de erro "500 Internal Server Error"
