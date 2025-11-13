@@ -1,8 +1,8 @@
 Fatura em acordo - Com corte de água
 Pré-requisitos:
-- Fatura deve estar em acordo ativo.
-- Fatura deve estar com o status "Pendente/Vencida".
-- Unidade deve ter corte de água.
+   - Fatura deve estar em acordo ativo.
+   - Fatura deve estar com o status "Pendente/Vencida".
+   - Unidade deve ter corte de água.
 
 Dado que estou na tela de "Acordos"
 E crio um novo acordo
@@ -13,11 +13,10 @@ Então devo ver as opções:
    - Excluir corte de água existente
    - Não alterar corte de água
 
-
 Fatura em acordo - Sem corte de água
 Pré-requisitos:
-Gerar corte de água na unidade.
-Acesso a tela de "Acordos".
+   - Gerar corte de água na unidade.
+   - Acesso a tela de "Acordos".
 
 Dado que estou na tela de "Acordos"
 E crio um novo acordo
@@ -27,8 +26,8 @@ Então deve criar acordo sem exibir modal de corte de água
 
 Fatura em acordo - Inativar corte de água (mantém o registro)
 Pré-requisitos:
-Fatura deve estar em acordo ativo.
-Fatura deve estar com o status "Pendente/Vencida".
+   - Fatura deve estar em acordo ativo.
+   - Fatura deve estar com o status "Pendente/Vencida".
 Unidade deve ter corte de água.
 
 Dado que estou na tela de "Acordos"
@@ -41,9 +40,10 @@ Então o corte de água deve ser inativado, mas o registro mantido
 
 Fatura em acordo - Excluir corte de água existente
 Pré-requisitos:
-Fatura deve estar em acordo ativo.
-Fatura deve estar com o status "Pendente/Vencida".
-Unidade deve ter corte de água.
+   - Fatura deve estar em acordo ativo.
+   - Fatura deve estar com o status "Pendente/Vencida".
+   - Unidade deve ter corte de água.
+
 Dado que estou na tela de "Acordos"
 E crio um novo acordo
 E clico no botão Salvar
@@ -54,9 +54,9 @@ Então o corte de água deve ser excluído do sistema
 
 Fatura em acordo - Não alterar corte de água
 Pré-requisitos:
-Fatura deve estar em acordo ativo.
-Fatura deve estar com o status "Pendente/Vencida".
-Unidade deve ter corte de água.
+   - Fatura deve estar em acordo ativo.
+   - Fatura deve estar com o status "Pendente/Vencida".
+   - Unidade deve ter corte de água.
 
 Dado que estou na tela de "Acordos"
 E crio um novo acordo
