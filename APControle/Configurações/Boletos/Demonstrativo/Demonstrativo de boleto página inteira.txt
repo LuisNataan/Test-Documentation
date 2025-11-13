@@ -1,0 +1,20 @@
+Demonstrativo de boleto página inteira
+Pré-requisitos:
+- Acessar Configurações -> Boletos -> Demonstrativo
+- Devem estar ativos as checkboxes "Exibir cabeçalho", 
+    "Exibir fração ideal", 
+    "Exibir aviso de devedor/não devedor", 
+    "Considerar acordo na inadimplência", 
+    "Considerar cobrança extra na inadimplência", 
+    "Considerar multa na inadimplência".
+- Deve estar selecionado no Modelo Demonstrativo Boleto a opção "Demosntrativo boleto padrão"
+- Deve estar selecionado o tamanho do demonstrativo "Página inteira"
+- Deve ter boletos cadastrados
+
+Dado que estou na tela de Boletos
+E seleciono um condomínio
+E seleciono um boleto
+E clico no botão Ações
+E clico no botão Visualizar
+E deve abrir nova aba com o demonstrativo de boleto
+Então as informações do demonstrativo de boleto devem ser exibidas corretamente sem quebrar a linha do boleto para pagamento
