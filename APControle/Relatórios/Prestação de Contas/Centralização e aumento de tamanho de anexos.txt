@@ -1,0 +1,105 @@
+Configurações de centralização e aumento de tamanho de anexos
+Pré-requisitos:
+- Acessar Relatórios -> Prestação de Contas -> Nova Prestação de Contas
+
+Dado que estou na tela de Relatórios de Prestação de Contas
+E seleciono um condomínio
+E seleciono um Período de Tempo inicial
+E seleciono um Período de Tempo final
+E informo nome do arquivo do relatório
+E clico no botão Salvar
+E estou na tela de Atualizações de Prestação de Contas
+E seleciono a opção Lançamentos
+E clico no botão Adicionar Relatório
+E habilito a opção "Redimensionar anexos"
+E clico no botão Salvar
+E tela deve ser recarregada
+E clico no botão Gerar Prestação
+E relatório é gerado com anexos redimensionados
+Então as imagens estão alinhadas com a página do relatório
+
+Configurações de centralização e aumento de tamanho de anexos - Sem anexos
+Pré-requisitos:
+- Acessar Relatórios -> Prestação de Contas -> Nova Prestação de Contas
+- Lançamentos não possuem anexos
+
+Dado que estou na tela de Relatórios de Prestação de Contas
+E seleciono um condomínio
+E seleciono um Período de Tempo inicial
+E seleciono um Período de Tempo final
+E informo nome do arquivo do relatório
+E clico no botão Salvar
+E estou na tela de Atualizações de Prestação de Contas
+E seleciono a opção Lançamentos
+E clico no botão Adicionar Relatório
+E clico no botão Salvar
+E tela deve ser recarregada
+E clico no botão Gerar Prestação
+E relatório é gerado sem anexos
+Então não deve ser exibido nenhum anexo
+
+Relatório de Prestação de Contas centralização e aumento de tamanho de anexos - Relatório de Anexos
+Pré-requisitos:
+- Acessar Relatórios -> Prestação de Contas -> Nova Prestação de Contas
+
+Dado que estou na tela de Relatórios de Prestação de Contas
+E seleciono um condomínio
+E seleciono um Período de Tempo inicial
+E seleciono um Período de Tempo final
+E informo nome do arquivo do relatório
+E clico no botão Salvar
+E estou na tela de Atualizações de Prestação de Contas
+E seleciono a opção Anexos
+E clico no botão Adicionar Relatório
+E habilito a opção "Redimensionar anexos"
+E clico no botão Salvar
+E tela deve ser recarregada
+E clico no botão Gerar Prestação
+E relatório é gerado com anexos redimensionados
+Então as imagens está alinhadas com a página do relatório
+
+Relatório de Prestação de Contas centralização e aumento de tamanho de anexos - Relatórios de Lançamentos (Detalhado)
+Pré-requisitos:
+- Acessar Relatórios -> Prestação de Contas -> Nova Prestação de Contas
+- Lançamentos possuem anexos
+
+Dado que estou na tela de Relatórios de Prestação de Contas
+E seleciono um condomínio
+E seleciono um Período de Tempo inicial
+E seleciono um Período de Tempo final
+E informo nome do arquivo do relatório
+E clico no botão Salvar
+E estou na tela de Atualizações de Prestação de Contas
+E seleciono a opção Lançamentos
+E clico no botão Adicionar Relatório
+E habilito a opção "Redimensionar anexos"
+E clico no botão Salvar
+E tela deve ser recarregada
+E clico no botão Gerar Prestação
+E relatório é gerado com anexos redimensionados
+Então as imagens está alinhadas com a página do relatório
+
+Relatório de Prestação de Contas centralização e aumento de tamanho de anexos - Anexos com tamanhos diferentes
+Pré-requisitos:
+- Acessar Relatórios -> Prestação de Contas -> Nova Prestação de Contas
+
+Dado que estou na tela de Relatórios de Prestação de Contas
+E seleciono um condomínio
+E seleciono um Período de Tempo inicial
+E seleciono um Período de Tempo final
+E informo nome do arquivo do relatório
+E clico no botão Salvar
+E estou na tela de Atualizações de Prestação de Contas
+E seleciono a opção Anexos
+E clico no botão Adicionar Relatório
+E habilito a opção "Redimensionar anexos"
+E clico no botão Salvar
+E tela deve ser recarregada
+E seleciono Relatório de Anexos
+E clico no botão Editar
+E seleciono vários anexos com tamanhos diferentes
+E clico no botão Salvar
+E tela deve ser recarregada
+E clico no botão Gerar Prestação
+E relatório é gerado com anexos redimensionados
+Então as imagens estão alinhadas com a página do relatório

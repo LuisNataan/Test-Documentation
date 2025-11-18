@@ -1,0 +1,50 @@
+Configurações de tamanho de fontes no boleto - Tamanho Máximo
+Pré-requisitos:
+- Acessar Configurações -> Boletos -> Demonstrativo
+
+Dado que estou na tela de configurações de boletos
+E selecionado um condomínio
+E clico no botão Ações
+E clico em Editar
+E estou na tela de configurações de demonstrativo
+E deve estar com a opção Exibir Sim no Demonstrativo de Contas
+E tamanho de fonte deve estar como 12
+E deve estar com a opção de Exibir Sim no Demonstrativo de Rateio
+E o tamanho de fonte deve ser 12
+E habilito a checkbox "Confirmar Dados"
+E clico no botão Salvar
+Então o tamanho de fonte deve ser alterado ao gerar um boleto
+
+Configurações de tamanho de fontes no boleto - Tamanho Mínimo
+Pré-requisitos:
+- Acessar Configurações -> Boletos -> Demonstrativo
+
+Dado que estou na tela de configurações de boletos
+E selecionado um condomínio
+E clico no botão Ações
+E clico em Editar
+E estou na tela de configurações de demonstrativo
+E deve estar com a opção Exibir Sim no Demonstrativo de Contas
+E tamanho de fonte deve estar como 5
+E deve estar com a opção de Exibir Sim no Demonstrativo de Rateio
+E o tamanho de fonte deve ser 5
+E habilito a checkbox "Confirmar Dados"
+E clico no botão Salvar
+Então o tamanho de fonte deve ser alterado ao gerar um boleto
+
+Configurações de tamanho de fontes no boleto - Tamanhos Diferentes
+Pré-requisitos:
+- Acessar Configurações -> Boletos -> Demonstrativo
+
+Dado que estou na tela de configurações de boletos
+E selecionado um condomínio
+E clico no botão Ações
+E clico em Editar
+E estou na tela de configurações de demonstrativo
+E deve estar com a opção Exibir Sim no Demonstrativo de Contas
+E tamanho de fonte deve estar como 12
+E deve estar com a opção de Exibir Sim no Demonstrativo de Rateio
+E o tamanho de fonte deve ser 8
+E habilito a checkbox "Confirmar Dados"
+E clico no botão Salvar
+Então o tamanho de fonte deve ser alterado ao gerar um boleto

@@ -1,0 +1,70 @@
+Relatório de Endereços - Campo Assunto
+
+Pré-requisitos:
+    - Ter condomínios cadastrados
+    - Condomínios devem ter endereços de cobrança e endereços de correios
+    - Acessar Relatórios -> Diversos -> Relatório de Endereços
+
+Dado que estou na tela Relatório de Endereços
+E seleciono um Condomínio
+E seleciono a quantidade de unidades
+E seleciono o Tipo de endereço Correios
+E seleciono o Endereço de Ambos
+E preencho o campo Assunto (Ex.: Endereços de Correios)
+E clico no botão Gerar
+E clico no botão Download
+E seleciono a opção PDF
+Então é possível visualizar o arquivo com o assunto preenchido
+
+Relatório de Endereços - Campo Assunto - Modo Paisagem
+Pré-requisitos:
+    - Ter condomínios cadastrados
+    - Condomínios devem ter endereços de cobrança e endereços de correios
+    - Acessar Relatórios -> Diversos -> Relatório de Endereços
+
+Dado que estou na tela Relatório de Endereços
+E seleciono um Condomínio
+E seleciono a quantidade de unidades
+E seleciono o Tipo de endereço Correios
+E seleciono o Endereço de Ambos
+E preencho o campo Assunto (Ex.: Endereços de Correios)
+E checkbox "Imprimir em modo retrato" deve estar desabilitado
+E clico no botão Gerar
+E clico no botão Download
+E seleciono a opção PDF
+Então é possível visualizar o arquivo com o assunto preenchido
+
+Relatório de Endereços - Campo Assunto - Modo Retrato
+Pré-requisitos:
+    - Ter condomínios cadastrados
+    - Condomínios devem ter endereços de cobrança e endereços de correios
+    - Acessar Relatórios -> Diversos -> Relatório de Endereços
+
+Dado que estou na tela Relatório de Endereços
+E seleciono um Condomínio
+E seleciono a quantidade de unidades
+E seleciono o Tipo de endereço Correios
+E seleciono o Endereço de Ambos
+E preencho o campo Assunto (Ex.: Endereços de Correios)
+E checkbox "Imprimir em modo retrato" deve estar habilitado
+E clico no botão Gerar
+E clico no botão Download
+E seleciono a opção PDF
+Então é possível visualizar o arquivo com o assunto preenchido
+
+Relatório de Endereços - Campo Assunto - Tipo de Endereço Prédio
+Pré-requisitos:
+    - Ter condomínios cadastrados
+    - Condomínios devem ter endereços de cobrança e endereços de correios
+    - Acessar Relatórios -> Diversos -> Relatório de Endereços
+
+Dado que estou na tela Relatório de Endereços
+E seleciono um Condomínio
+E seleciono a quantidade de unidades
+E seleciono o Tipo de endereço Prédio
+E seleciono o Endereço de Ambos
+E preencho o campo Assunto (Ex.: Endereços do Condomínio)
+E clico no botão Gerar
+E clico no botão Download
+E seleciono a opção PDF
+Então é possível visualizar o arquivo com o assunto preenchido
