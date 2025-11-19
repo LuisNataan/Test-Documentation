@@ -1,0 +1,29 @@
+Filtro de status no cadastro de administradores
+Pré-requisitos:
+    - Deve haver uma grande quantidade de administradores cadastrados (Mais de 100, de preferência)
+    - Ter acesso ao Financizze
+
+Dado que estou na tela de cadastro de administradores
+E seleciono o status como Ativo
+E clico em Filtrar
+Então devo ver apenas os administradores ativos
+
+Filtro de status no cadastro de administradores - Inativo
+Pré-requisitos:
+    - Deve haver uma grande quantidade de administradores cadastrados (Mais de 100, de preferência)
+    - Ter acesso ao Financizze
+
+Dado que estou na tela de cadastro de administradores
+E seleciono o status como Inativo
+E clico em Filtrar
+Então devo ver apenas os administradores inativos
+
+Filtro de status no cadastro de administradores - Todos
+Pré-requisitos:
+    - Deve haver uma grande quantidade de administradores cadastrados (Mais de 100, de preferência)
+    - Ter acesso ao Financizze
+
+Dado que estou na tela de cadastro de administradores
+E seleciono o status como Todos
+E clico em Filtrar
+Então devo ver todos os administradores

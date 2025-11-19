@@ -1,0 +1,43 @@
+Impressão em massa de boletos
+Pré-requisitos:
+    - Deve possuir boletos
+
+Dado que estou na tela de boletos
+E seleciono um condomínio
+E seleciono um período de tempo
+E clico no botão Ações
+E clico no botão Selecionar Todos
+E clico no botão Impressão
+E clico no botão Imprimir
+E deve mostrar modal Imprimir endereço
+E seleciono Responsável
+E clico em Enviar
+Então o sistema imprime os boletos selecionados com sucesso
+
+Impressão em massa de boletos - Impressão para inquilino
+
+Dado que estou na tela de boletos
+E seleciono um condomínio
+E seleciono um período de tempo
+E clico no botão Ações
+E clico no botão Selecionar Todos
+E clico no botão Impressão
+E clico no botão Imprimir
+E deve mostrar modal Imprimir endereço
+E seleciono Inquilino
+E clico em Enviar
+Então o sistema imprime os boletos selecionados com sucesso
+
+Impressão em massa de boletos - Impressão para proprietário
+
+Dado que estou na tela de boletos
+E seleciono um condomínio
+E seleciono um período de tempo
+E clico no botão Ações
+E clico no botão Selecionar Todos
+E clico no botão Impressão
+E clico no botão Imprimir
+E deve mostrar modal Imprimir endereço
+E seleciono Proprietário
+E clico em Enviar
+Então o sistema imprime os boletos selecionados com sucesso

@@ -1,0 +1,24 @@
+Reserva de área comum - Inserir arquivos após Salvar
+Pré-requisitos:
+    - Condomínio deve ter área comum cadastrada
+    - Área comum deve permitir reservas por horário
+    - Reservas devem ser feitas apenas com horário padrão
+    - Devem estar cadastrados os horários na área comum
+    - Deve estar logado com morador do condomínio
+
+Dado que estou na tela de Reserva de Área Comum
+E seleciono uma área comum
+E seleciono uma data para reserva
+E clico no botão Reservar
+E estou na tela Nova Reserva
+E informo horário para reserva
+E informo Motivo
+E ativo a checkbox "Eu aceito os termos de uso (Visualizar Termos de Uso)."
+E clico no botão Salvar
+E deve salvar a reserva com sucesso
+E seleciono a reserva criada
+E estou na tela Reserva de Área Comum
+E clico no botão Selecionar Arquivos
+E faço importação dos arquivos
+E clico no botão Salvar
+Então deve salvar a reserva com sucesso
