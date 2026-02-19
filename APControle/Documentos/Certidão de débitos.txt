@@ -1,0 +1,49 @@
+Gerar Certidão de Débitos
+Pré-requisitos:
+- Acessar Documentos -> Certidão de Débitos -> Nova Certidão
+- Unidade deve estar sem acordos cadastrados
+- Unidade deve estar adimplente com o condomínio
+
+Dado que estou na tela de Certidão de Débitos
+E seleciono um Condomínio
+E seleciono uma Unidade
+E clico no botão Gerar
+Então a certidão de débito deve ser criada
+
+Gerar Certidão de Débitos - Unidade com acordos
+Pré-requisitos:
+- Acessar Documentos -> Certidão de Débitos -> Nova Certidão
+- Unidade deve possuir um acordo cadastrado
+- Acessar Configurações -> Ação -> Configurar, habilitar o checkbox "Considerar acordo inadimplente"
+
+Dado que estou na tela de Certidão de Débitos
+E seleciono um Condomínio
+E seleciono uma Unidade
+E habilito o checkbox Incluir Acordos
+E deve mostrar mensagem de erro "Esta unidade possui acordos em aberto." abaixo do campo de unidade
+Então não deve ser criada a certidão de débito
+
+Gerar Certidão de Débitos - Unidade inadimplente
+Pré-requisitos:
+- Acessar Documentos -> Certidão de Débitos -> Nova Certidão
+
+Dado que estou na tela de Certidão de Débitos
+E seleciono um Condomínio
+E seleciono uma Unidade
+E clico no botão Gerar
+E devo mostrar mensagem de erro "Esta unidade possui valores pendentes (o sistema considera todos os lançamentos em aberto)." abaixo do campo de unidade
+Então não deve ser criada a certidão de débito
+
+Gerar Certidão de Débitos - Unidade inadimplente com acordos
+Pré-requisitos:
+- Acessar Documentos -> Certidão de Débitos -> Nova Certidão
+- Acessar Configurações -> Ação -> Configurar, habilitar o checkbox "Considerar acordo inadimplente"
+- Unidade deve possuir um acordo cadastrado
+
+Dado que estou na tela de Certidão de Débitos
+E seleciono um Condomínio
+E seleciono uma Unidade
+E habilito o checkbox Incluir Acordos
+E clico no botão Gerar
+E devo mostrar mensagem de erro "Esta unidade possui acordos em aberto." abaixo do campo de unidade
+Então não deve ser criada a certidão de débito

@@ -1,0 +1,13 @@
+[BUG]Certidão de débitos não pode ser gerada - "Esta unidade possui acordos pendentes."
+Pré-requisitos:
+- Acessar Configurações -> Ação -> Configurar, habilitar o checkbox "Considerar acordo inadimplente"
+- Acessar Documentos -> Certidão de Débitos -> Nova Certidão
+- Unidade deve estar sem acordos cadastrados
+- Unidade deve estar adimplente com o condomínio
+
+Dado que estou na tela de Certidão de Débitos
+E seleciono um Condomínio
+E seleciono uma Unidade
+E clico no botão Gerar
+E devo mostrar mensagem de erro "Esta unidade possui acordos pendentes." abaixo do campo de unidade
+Então a certidão de débito não deve ser criada
