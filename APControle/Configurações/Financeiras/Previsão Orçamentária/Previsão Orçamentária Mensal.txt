@@ -1,0 +1,34 @@
+Configuração de Previsão Orçamentária Mensal
+Pré-requisitos:
+- Acessar Configurações -> Financeiras -> Previsão Orçamentária
+Dado que estou na tela de Configurações de Previsão Orçamentária
+E seleciono um condomínio
+E seleciono a opção Tipo Mensal
+E informo uma data (Ex.: Fev/2026)
+E seleciono uma conta contábil
+E informo um valor
+Quando clico em Salvar
+Então a previsão orçamentária mensal deve ser salva com sucesso
+
+Configurações de Previsão Orçamentária Mensal - Aplicar valor de reajuste
+
+Dado que estou na tela de Configurações de Previsão Orçamentária
+E seleciono um condomínio
+E seleciono a opção Tipo Mensal
+E informo uma data (Ex.: Fev/2026)
+E seleciono uma conta contábil
+E informo um valor
+E informo um percentual de reajuste (Ex.: 5%)
+Quando clico em Salvar
+Então a previsão orçamentária mensal deve ser salva com o valor reajustado para o próximo mês com sucesso
+
+Configurações de Previsão Orçamentária Mensal - Alterar valor de reajuste
+Dado que estou na tela de Configurações de Previsão Orçamentária
+E seleciono um condomínio
+E seleciono a opção Tipo Mensal
+E informo uma data (Ex.: Fev/2026)
+E seleciono uma conta contábil
+E informo um valor
+E informo um percentual de reajuste (Ex.: 2%)
+Quando clico em Salvar
+Então a previsão orçamentária mensal deve ser salva com o valor reajustado com sucesso

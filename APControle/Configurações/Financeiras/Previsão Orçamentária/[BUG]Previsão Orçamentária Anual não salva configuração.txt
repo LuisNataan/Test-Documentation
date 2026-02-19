@@ -1,0 +1,27 @@
+Previsão Orçamentária Anual - Não salva configuração
+- Pré-requisitos:
+- Acessar Configurações -> Financeiras -> Previsão Orçamentária
+
+Dado que estou na tela Previsão Orçamentária
+
+E seleciono Condomínio
+E seleciono Tipo como Anual
+E seleciono Data como Ano (Ex.: 2025)
+E informo Valor Reajuste (Ex.: 5%)
+E informo valor em uma conta
+E clico em Salvar
+E clico no ano selecionado
+Então não é salvo os valores informados anteriormente
+
+Relatório Previsão Orçamentária - Não apresenta relatório
+- Pré-requisitos:
+- Acessar Relatórios -> Contábeis -> Previsão Orçamentária
+
+Dado que realizei os passos anteriores
+E estou na tela de Relatório Previsão Orçamentária
+E seleciono Condomínio
+E seleciono Tipo Anual
+E seleciono Data Inicial
+E seleciono Data Final
+E clico no botão Gerar
+Então não é apresentado o relatório da Previsão Orçamentária
