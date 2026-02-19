@@ -1,0 +1,12 @@
+Modelo de Demonstrativo Boleto contínuo fixo
+
+Pré-requisitos:
+- Acessar Configurações -> Boletos -> Demonstrativo
+- Selecionar Condomínio
+
+Dado que estou na tela de Configurações de Demonstrativo
+E estou na seção Modelo Demonstrativo Boleto
+E seleciono a opção "Demonstrativo Boleto Contínuo Fixo"
+E clico na checkbox "Confirmar Dados"
+E clico no botão Salvar
+Então o modelo de demonstrativo de boleto deve ser atualizado para "Demonstrativo Boleto Contínuo Fixo"
