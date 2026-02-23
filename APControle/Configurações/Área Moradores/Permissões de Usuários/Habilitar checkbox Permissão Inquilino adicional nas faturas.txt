@@ -1,0 +1,18 @@
+Habilitar checkbox Permissão Inquilino adicional
+Pré-requisitos:
+- Acessar Configurações -> Área Moradores -> Permissões de Usuários
+
+Dado que estou na tela de Configurações de Permissões de Usuários
+E seleciono um condomínio
+E acesso a seção Área de Moradores - Dashboard - Faturas
+E habilito a checkbox "Permitir acesso de moradores e proprietários adicionais nas faturas"
+Então deverá mostrar as faturas no aplicativo de morador para inquilinos e proprietários adicionais, caso haja algum cadastrado.
+
+Acessar faturas no aplicativo de morador para inquilinos e proprietários adicionais
+Pré-requisitos:
+- Acessar o aplicativo de morador com um usuário inquilino ou proprietário adicional
+- Função "Permitir acesso de moradores e proprietários adicionais nas faturas" habilitada
+
+Dado que estou no aplicativo de morador com um usuário inquilino ou proprietário adicional
+E acesso a seção de faturas
+Então deverá mostrar as faturas do inquilino ou proprietário adicional, caso haja algum cadastrado.
