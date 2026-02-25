@@ -1,0 +1,95 @@
+Gerar carnê de boletos
+- Pré-requisitos:
+-A situação do boleto deve ser de "Aguardando pagamento";
+- O registro do boleto deve ser de "Aguardando pagamento";
+- O boleto deve ser de fatura;
+- Boletos unificados não são considerados.
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cobranças
+E clico em Boletos
+E clico no botão Impressão
+E seleciono a opção Imprimir Carnê
+E estou na tela Imprimir Carnê de Boletos
+E seleciono Mês de Competência Inicial
+E seleciono Mês de Competência Final
+E seleciono unidades
+E clico no botão Gerar
+Então devo aguardar o arquivo ser gerado para download
+
+Gerar carnê de boletos - Tipo de fatura
+- Pré-requisitos:
+-A situação do boleto deve ser de "Aguardando pagamento";
+- O registro do boleto deve ser de "Aguardando pagamento";
+- O boleto deve ser de fatura;
+- Boletos unificados não são considerados.
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cobranças
+E clico em Boletos
+E clico no botão Impressão
+E seleciono a opção Imprimir Carnê
+E estou na tela Imprimir Carnê de Boletos
+E seleciono Mês de Competência Inicial
+E seleciono Mês de Competência Final
+E seleciono unidades
+E seleciono o tipo de fatura (Ex.: Fatura Padrão)
+E clico no botão Gerar
+Então devo aguardar o arquivo ser gerado para download trazendo apenas os boletos do tipo de fatura selecionado
+
+Gerar carnê de boletos - Não selecionar tipo de fatura
+- Pré-requisitos:
+-A situação do boleto deve ser de "Aguardando pagamento";
+- O registro do boleto deve ser de "Aguardando pagamento";
+- O boleto deve ser de fatura;
+- Boletos unificados não são considerados.
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cobranças
+E clico em Boletos
+E clico no botão Impressão
+E seleciono a opção Imprimir Carnê
+E estou na tela Imprimir Carnê de Boletos
+E seleciono Mês de Competência Inicial
+E seleciono Mês de Competência Final
+E seleciono unidades
+E não seleciono o tipo de fatura
+E clico no botão Gerar
+Então devo aguardar o arquivo ser gerado para download trazendo os boletos de todos os tipos de fatura
+
+Gerar carnê de boletos - Não selecionar unidades
+- Pré-requisitos:
+-A situação do boleto deve ser de "Aguardando pagamento";
+- O registro do boleto deve ser de "Aguardando pagamento";
+- O boleto deve ser de fatura;
+- Boletos unificados não são considerados.
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cobranças
+E clico em Boletos
+E clico no botão Impressão
+E seleciono a opção Imprimir Carnê
+E estou na tela Imprimir Carnê de Boletos
+E seleciono Mês de Competência Inicial
+E seleciono Mês de Competência Final
+E não seleciono unidades
+E clico no botão Gerar
+Então deve mostrar mensagem de erro: "É necessário selecionar pelo menos uma unidade para gerar o carnê de boletos."
+
+Gerar carnê de boletos - Não selecionar mês de competência
+- Pré-requisitos:
+-A situação do boleto deve ser de "Aguardando pagamento";
+- O registro do boleto deve ser de "Aguardando pagamento";
+- O boleto deve ser de fatura;
+- Boletos unificados não são considerados.
+
+Dado que estou na tela inicial do sistema
+E abro a aba Cobranças
+E clico em Boletos
+E clico no botão Impressão
+E seleciono a opção Imprimir Carnê
+E estou na tela Imprimir Carnê de Boletos
+E seleciono Mês de Competência Inicial
+E seleciono Mês de Competência Final
+E clico no botão Gerar
+Então deve mostrar mensagem de erro: "É necessário selecionar mês de competência para gerar o carnê de boletos."
