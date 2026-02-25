@@ -1,0 +1,11 @@
+Gerar boleto de teste
+- Pré-requisitos:
+- Ter condomínio cadastrado no sistema
+- Condomínio deve possuir uma conta bancária cadastrada
+- No backend devo criar um boleto de teste para o condomínio
+
+Dado que estou na tela inicial do sistema
+E abro aba Cobranças
+E clico em Boletos
+E seleciono boleto de teste
+Então o sistema gera o boleto de teste com sucesso
