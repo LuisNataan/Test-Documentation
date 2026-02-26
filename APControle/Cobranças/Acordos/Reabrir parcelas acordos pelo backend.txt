@@ -1,0 +1,122 @@
+Reabrir parcela de acordos pelo backend - Fatura lançada
+    - Pré-requisitos:
+    - Acordo deve estar com status Aprovado no frontend
+    - Fatura do acordo deve estar lançada
+
+Dado que estou na tela inicial do backend
+E clico em Gerenciar Clientes
+E clico em Acordos
+Estou na tela de Acordos
+E informo uma Administradora
+E informo o condomínio onde está o acordo
+E informo unidade
+E informo Bloco
+E informo o número do acordo
+E clico no botão Filtrar
+E clico no botão Ações
+E clico em Visualizar parcelas
+E seleciono a parcela lançada
+E clico no botão Ações
+E clico no botão Reabrir
+E deve abrir modal com a mensagem "Deseja realmente reabrir a parcela? Boletos de API não serão cancelados na API!"
+E clico no botão Ok
+E devo mostrar mensagem de sucesso "Parcela reaberta com sucesso"
+Então parcela deve ser reaberta e o status deve ser atualizado para "Em Aberto"
+
+Reabrir parcela de acordos pelo backend - Fatura Fechada
+    - Pré-requisitos:
+    - Acordo deve estar com status Aprovado no frontend
+    - Fatura do acordo deve estar fechada
+
+Dado que estou na tela inicial do backend
+E clico em Gerenciar Clientes
+E clico em Acordos
+Estou na tela de Acordos
+E informo uma Administradora
+E informo o condomínio onde está o acordo
+E informo número do acordo
+E clico no botão Filtrar
+E clico no botão Ações
+E clico em Visualizar parcelas
+E seleciono a parcela fechada
+E clico no botão Ações
+E clico no botão Reabrir
+E deve abrir modal com a mensagem "Deseja realmente reabrir a parcela? Boletos de API não serão cancelados na API!"
+E clico no botão Ok
+E devo mostrar mensagem de erro "Esta parcela está lançada em uma fatura fechada/paga e não pode ser reaberta."
+Então parcela não deve estar reaberta
+
+Reabrir parcela de acordo - Cancelar reabertura
+    - Pré-requisitos:
+    - Acordo deve estar com status Aprovado no frontend
+    - Fatura do acordo deve estar lançada
+
+Dado que estou na tela inicial do backend
+E clico em Gerenciar Clientes
+E clico em Acordos
+Estou na tela de Acordos
+E informo uma Administradora
+E informo o condomínio onde está o acordo
+E informo unidade
+E informo Bloco
+E informo o número do acordo
+E clico no botão Filtrar
+E clico no botão Ações
+E clico em Visualizar parcelas
+E seleciono a parcela lançada
+E clico no botão Ações
+E clico no botão Reabrir
+E deve abrir modal com a mensagem "Deseja realmente reabrir a parcela? Boletos de API não serão cancelados na API!"
+E clico no botão Cancelar
+E deve fechar o modal
+Então parcela deve permanecer com status "Lançada"
+
+Reabrir parcela de acordo - Acordo com boleto gerado
+    - Pré-requisitos:
+    - Acordo deve estar com status Aprovado no frontend
+    - Acordo deve estar com um boleto de parcela gerado
+
+Dado que estou na tela inicial do backend
+E clico em Gerenciar Clientes
+E clico em Acordos
+Estou na tela de Acordos
+E informo uma Administradora
+E informo o condomínio onde está o acordo
+E informo unidade
+E informo Bloco
+E informo o número do acordo
+E clico no botão Filtrar
+E clico no botão Ações
+E clico em Visualizar parcelas
+E seleciono a parcela com boleto gerado
+E clico no botão Ações
+E clico no botão Reabrir
+E deve abrir modal com a mensagem "Deseja realmente reabrir a parcela? Boletos de API não serão cancelados na API!"
+E clico no botão Ok
+E deve mostrar mensagem de sucesso "Parcela reaberta com sucesso"
+Então parcela deve ser reaberta e o status deve ser atualizado para "Em Aberto"
+
+Reabrir parcela de acordo - Boleto da parcela paga
+    - Pré-requisitos:
+    - Acordo deve estar com status Aprovado no frontend
+    - Acordo deve estar com um boleto de parcela gerado e pago
+
+Dado que estou na tela inicial do backend
+E clico em Gerenciar Clientes
+E clico em Acordos
+Estou na tela de Acordos
+E informo uma Administradora
+E informo o condomínio onde está o acordo
+E informo unidade
+E informo Bloco
+E informo o número do acordo
+E clico no botão Filtrar
+E clico no botão Ações
+E clico em Visualizar parcelas
+E seleciono a parcela com boleto pago
+E clico no botão Ações
+E clico no botão Reabrir
+E deve abrir modal com a mensagem "Deseja realmente reabrir a parcela? Boletos de API não serão cancelados na API!"
+E clico no botão Ok
+E deve mostrar mensagem de erro "Esta parcela possui um boleto pago e não pode ser reaberta."
+Então parcela não deve ser reaberta
