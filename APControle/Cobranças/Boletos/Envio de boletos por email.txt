@@ -1,0 +1,74 @@
+Envio de boletos por e-mail
+- Pré-requisitos:
+    - Boleto deve estar com status Aguardando pagamento
+    - Morador vinculado ao boleto deve ter um e-mail válido associado
+    - Nas configurações da unidade, deve estar habilitada a opção de envio de boletos por e-mail
+
+Dado que estou na tela inicial do sistema
+E clico em Cobranças
+E clico em Boletos
+E seleciono um condomínio
+E seleciono um boleto com status Aguardando pagamento
+E clico no botão Ações
+E clico na opção Enviar por e-mail
+Então deve ser exibida uma mensagem de sucesso "Boleto enviado por e-mail com sucesso"
+
+Envio de boletos por e-mail - E-mail do morador inválido
+- Pré-requisitos:
+    - Boleto deve estar com status Aguardando pagamento
+    - Morador vinculado ao boleto deve ter um e-mail inválido associado
+    - Nas configurações da unidade, deve estar habilitada a opção de envio de boletos por e-mail
+
+Dado que estou na tela inicial do sistema
+E clico em Cobranças
+E clico em Boletos
+E seleciono um condomínio
+E seleciono um boleto com status Aguardando pagamento
+E clico no botão Ações
+E clico na opção Enviar por e-mail
+Então deve ser exibida uma mensagem de erro "Os boletos não foram enviados."
+
+Envio de boletos por e-mail - Envio desabilitado nas configurações da unidade
+- Pré-requisitos:
+    - Boleto deve estar com status Aguardando pagamento
+    - Morador vinculado ao boleto deve ter um e-mail válido associado
+    - Nas configurações da unidade, deve estar desabilitada a opção de envio de boletos por e-mail
+
+Dado que estou na tela inicial do sistema
+E clico em Cobranças
+E clico em Boletos
+E seleciono um condomínio
+E seleciono um boleto com status Aguardando pagamento
+E clico no botão Ações
+E clico na opção Enviar por e-mail
+Então deve ser exibida uma mensagem de erro "Os boletos não foram enviados."
+
+Envio de boletos por e-mail - Boleto com status diferente de Aguardando pagamento
+- Pré-requisitos:
+    - Boleto deve estar com status diferente de Aguardando pagamento
+    - Morador vinculado ao boleto deve ter um e-mail válido associado
+    - Nas configurações da unidade, deve estar habilitada a opção de envio de boletos por e-mail
+
+Dado que estou na tela inicial do sistema
+E clico em Cobranças
+E clico em Boletos
+E seleciono um condomínio
+E seleciono um boleto com status diferente de Aguardando pagamento
+E clico no botão Ações
+E clico na opção Enviar boleto pago
+Então deve ser exibida uma mensagem "Sua solicitação foi processada com sucesso."
+
+Envio em massa de boletos por e-mail
+- Pré-requisitos:
+    - Vários boletos devem estar com status Aguardando pagamento
+    - Moradores vinculados aos boletos devem ter e-mails válidos associados
+    - Nas configurações da unidade, deve estar habilitada a opção de envio de boletos por e-mail
+
+Dado que estou na tela inicial do sistema
+E clico em Cobranças
+E clico em Boletos
+E seleciono um condomínio
+E seleciono vários boletos com status Aguardando pagamento
+E clico no botão Enviar por e-mail
+E deve abrir modal com resultados do envio, indicando quais boletos foram enviados com sucesso e quais falharam
+Então deve ser exibida uma mensagem de sucesso "Boletos enviados por e-mail com sucesso" para os boletos enviados com sucesso
