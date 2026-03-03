@@ -1,0 +1,119 @@
+Gerar relatório de transferência
+    - Pré-requisitos:
+    - O condomínio deve ter transferências lançadas
+    - Acessar Relatórios -> Financeiros -> Transferências
+
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Financeiros
+E clico em Relatório de Transferências
+E informo o condomínio
+E informo a Data Inicial
+E informo a Data Final
+E seleciono o tipo de relatório (Analítico ou Padrão)
+E seleciono o Tipo de Transferência (Todas, Manuais ou Automáticas)
+E clico no botão Gerar Relatório
+Então deve ser gerado um relatório de transferências do condomínio com as informações filtradas
+
+Gerar relatório de transferência - Sem transferências lançadas
+    - Pré-requisitos:
+    - O condomínio não deve ter transferências lançadas
+    - Acessar Relatórios -> Financeiros -> Transferências
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Financeiros
+E clico em Relatório de Transferências
+E informo o condomínio
+E informo a Data Inicial
+E informo a Data Final
+E seleciono o tipo de relatório (Analítico ou Padrão)
+E seleciono o Tipo de Transferência (Todas, Manuais ou Automáticas)
+E clico no botão Gerar Relatório
+Então não é gerado um relatório de transferências
+
+Gerar relatório de transferência - Filtro por tipo de transferência
+    - Pré-requisitos:
+    - O condomínio deve ter transferências lançadas
+    - Acessar Relatórios -> Financeiros -> Transferências
+
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Financeiros
+E clico em Relatório de Transferências
+E informo o condomínio
+E informo a Data Inicial
+E informo a Data Final
+E seleciono o tipo de relatório (Analítico ou Padrão)
+E seleciono o Tipo de Transferência (Manuais)
+E clico no botão Gerar Relatório
+Então deve ser gerado um relatório de transferências do condomínio com as informações filtradas
+
+Gerar relatório de transferência - Filtro por tipo de relatório
+    - Pré-requisitos:
+    - O condomínio deve ter transferências lançadas
+    - Acessar Relatórios -> Financeiros -> Transferências
+
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Financeiros
+E clico em Relatório de Transferências
+E informo o condomínio
+E informo a Data Inicial
+E informo a Data Final
+E seleciono o tipo de relatório (Analítico)
+E seleciono o Tipo de Transferência (Todas, Manuais ou Automáticas)
+E clico no botão Gerar Relatório
+Então deve ser gerado um relatório de transferências do condomínio no formato analítico com as informações filtradas
+
+Gerar relatório de transferência - Filtro por data
+    - Pré-requisitos:
+    - O condomínio deve ter transferências lançadas
+    - Acessar Relatórios -> Financeiros -> Transferências
+
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Financeiros
+E clico em Relatório de Transferências
+E informo o condomínio
+E informo a Data Inicial(Ex.: Janeiro/2024)
+E informo a Data Final(Ex.: Março/2024)
+E seleciono o tipo de relatório (Analítico ou Padrão)
+E seleciono o Tipo de Transferência (Todas, Manuais ou Automáticas)
+E clico no botão Gerar Relatório
+Então deve ser gerado um relatório de transferências do condomínio com as informações filtradas por data
+
+Gerar relatório de transferência - Agrupar transferências automáticas
+    - Pré-requisitos:
+    - O condomínio deve ter transferências lançadas
+    - Acessar Relatórios -> Financeiros -> Transferências
+
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Financeiros
+E clico em Relatório de Transferências
+E informo o condomínio
+E informo a Data Inicial
+E informo a Data Final
+E seleciono o tipo de relatório (Analítico ou Padrão)
+E seleciono o Tipo de Transferência (Automáticas)
+E habilito a opção "Agrupar transferências automáticas"
+E clico no botão Gerar Relatório
+Então deve ser gerado um relatório de transferências do condomínio agrupando as transferências automáticas por data e valor
+
+Gerar relatório de transferência - Exportar relatório
+    - Pré-requisitos:
+    - O condomínio deve ter transferências lançadas
+    - Acessar Relatórios -> Financeiros -> Transferências
+
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Financeiros
+E clico em Relatório de Transferências
+E informo o condomínio
+E informo a Data Inicial
+E informo a Data Final
+E seleciono o tipo de relatório (Analítico ou Padrão)
+E seleciono o Tipo de Transferência (Todas, Manuais ou Automáticas)
+E clico no botão Gerar Relatório
+E clico no botão Exportar
+Então deve ser exportado o relatório de transferências do condomínio no formato escolhido (Ex.: Excel, PDF)
