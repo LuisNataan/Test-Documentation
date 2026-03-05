@@ -271,6 +271,7 @@ E clico em Salvar
 Então devo ver a mensagem "Configuração atualizada com sucesso."
 
 Configurar mudanças e depois excluir
+
 Dado que estou na tela inicial do sistema
 E abro aba "Agenda"
 E clico em "Configurações de mudanças"
@@ -292,6 +293,7 @@ E confirmo a exclusão
 Então devo ver a mensagem "Configuração excluída com sucesso."
 
 Configurar mudanças e depois tentar excluir uma configuração que está sendo usada em um agendamento
+
 Dado que estou na tela inicial do sistema
 E abro aba "Agenda"
 E clico em "Configurações de mudanças"
@@ -323,9 +325,10 @@ E clico em Excluir no registro da configuração criada
 E devo abrir modal para inserir senha e confirmar exclusão
 E informo minha senha
 E confirmo a exclusão
-Então devo ver a mensagem "Não foi possível excluir a configuração de mudança. Por favor, entre em contato com o suporte."
+Então devo ver a mensagem "Existem mudanças relacionadas a esta configuração."
 
 Configurar mudança com descrição
+
 Dado que estou na tela inicial do sistema
 E abro aba "Agenda"
 E clico em "Configurações de mudanças"
@@ -340,3 +343,39 @@ E informo horário de término "12:00"
 E informo descrição "Mudança de móveis grandes"
 E clico em Salvar
 Então devo ver a mensagem "Configuração criada com sucesso."
+
+Configurar mudança e excluir configuração com agendamento relacionado
+    - Pré-requisitos:
+    - Deve haver uma configuração de mudança criada
+    - Deve haver um agendamento criado
+
+Dado que estou na tela Configurações das mudanças
+E seleciono a configuração de mudança criada
+E clico no botão Ações
+E clico em Excluir
+E confirmo a exclusão
+Então devo ver a mensagem "Existem mudanças relacionadas a esta configuração."
+
+Configurar mudança e excluir configuração com agendamento relacionado - Agendamento pendente
+    - Pré-requisitos:
+    - Deve haver uma configuração de mudança criada
+    - Deve haver um agendamento criado com status pendente
+
+Dado que estou na tela Configurações das mudanças
+E seleciono a configuração de mudança criada
+E clico no botão Ações
+E clico em Excluir
+E confirmo a exclusão
+Então devo ver a mensagem "Existem mudanças relacionadas a esta configuração."
+
+Configurar mudança e excluir configuração com agendamento relacionado - Agendamento aprovado
+    - Pré-requisitos:
+    - Deve haver uma configuração de mudança criada
+    - Deve haver um agendamento criado com status aprovado
+
+Dado que estou na tela Configurações das mudanças
+E seleciono a configuração de mudança criada
+E clico no botão Ações
+E clico em Excluir
+E confirmo a exclusão
+Então devo ver a mensagem "Existem mudanças relacionadas a esta configuração."
