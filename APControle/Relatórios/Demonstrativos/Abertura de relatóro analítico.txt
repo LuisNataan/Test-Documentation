@@ -1,4 +1,4 @@
-Abertura de relatóro analítico
+Abertura de relatório analítico
 
 Dado que estou na tela inicial do sistema
 E clico na aba Relatórios

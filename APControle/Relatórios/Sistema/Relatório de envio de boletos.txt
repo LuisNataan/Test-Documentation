@@ -1,0 +1,35 @@
+Relatório de envio de boletos por endereço de e-mail
+    - Pré-requisitos:
+    - O condomínio deve ter boletos enviados por e-mail
+    - Moradores devem ter e-mail válido cadastrado
+
+Dado que estou na tela inicial do sistema
+E clico em Relatórios
+E clico em Sistema
+E clico em Boletos Enviados
+E seleciono um condomínio
+E seleciono o período de tempo
+E clico no botão Gerar Relatório
+Então deve ser gerado relatório de boletos enviados por email com as seguintes informações:
+    - Unidade
+    - Código de Cobrança
+    - Nome do Morador
+    - Documento
+    - E-mail
+    - Data de Envio
+    - Status do Envio (Enviado, Visualizado)
+    - Visualizado Em
+
+Relatório de envio de boletos por endereço de e-mail - Visualizar Boleto
+    - Pré-requisitos:
+    - O condomínio deve ter boletos enviados por e-mail
+    - Moradores devem ter e-mail válido cadastrado
+    - Devo ter acesso aos IDs de boletos no banco de dados
+
+Dado que estou na tela do relatório de boletos enviados por email
+E filtro os resultados por um email de morador
+E seleciono um boleto específico
+E copio o ID do boleto
+E acesso a URL de visualização do boleto utilizando o ID copiado (/email-visualizado/registrar-email-aberto-boleto?idBoleto=ID_DO_BOLETO)
+E quando volto para a tela de relatório de boletos enviados por email
+Então o boleto deve estar marcado como visualizado
